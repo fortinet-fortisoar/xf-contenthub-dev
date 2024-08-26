@@ -1,0 +1,5 @@
+# Dont Block Googlebot
+User-agent: *
+Allow: /
+
+Sitemap: https://fortisoar.contenthub.fortinet.com/sitemap.xml

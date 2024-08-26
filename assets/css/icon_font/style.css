@@ -1,0 +1,120 @@
+@font-face {
+  font-family: 'marketplace_fortisoar';
+  src:  url('fonts/marketplace_fortisoar.eot?8yjpbq');
+  src:  url('fonts/marketplace_fortisoar.eot?8yjpbq#iefix') format('embedded-opentype'),
+    url('fonts/marketplace_fortisoar.ttf?8yjpbq') format('truetype'),
+    url('fonts/marketplace_fortisoar.woff?8yjpbq') format('woff'),
+    url('fonts/marketplace_fortisoar.svg?8yjpbq#marketplace_fortisoar') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'marketplace_fortisoar' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-connector-type:before {
+  content: "\e900";
+}
+.icon-connector:before {
+  content: "\e901";
+}
+.icon-connector-border:before {
+  content: "\e902";
+}
+.icon-dashboard-type:before {
+  content: "\e903";
+}
+.icon-dashboard:before {
+  content: "\e904";
+}
+.icon-dashboard-border:before {
+  content: "\e905";
+}
+.icon-howtovideos-type:before {
+  content: "\e906";
+}
+.icon-howtovideos:before {
+  content: "\e907";
+}
+.icon-howtovideos-border:before {
+  content: "\e908";
+}
+.icon-playbook-type:before {
+  content: "\e909";
+}
+.icon-playbook:before {
+  content: "\e90a";
+}
+.icon-playbook-border:before {
+  content: "\e90b";
+}
+.icon-report-type:before {
+  content: "\e90c";
+}
+.icon-report:before {
+  content: "\e90d";
+}
+.icon-report-border:before {
+  content: "\e90e";
+}
+.icon-solutionpack-type:before {
+  content: "\e90f";
+}
+.icon-solutionpack:before {
+  content: "\e910";
+}
+.icon-solutionpack-border:before {
+  content: "\e911";
+}
+.icon-widget-type:before {
+  content: "\e912";
+}
+.icon-widget:before {
+  content: "\e913";
+}
+.icon-widget-border:before {
+  content: "\e914";
+}
+.icon-widget-large:before {
+  content: "\e915";
+}
+.icon-solutionpack-01:before {
+  content: "\e910";
+}
+.icon-home:before {
+  content: "\e916";
+}
+.icon-github:before {
+  content: "\e917";
+}
+.icon-documentation:before {
+  content: "\e918";
+}
+.icon-view-all-border:before {
+  content: "\e919";
+}
+.icon-view-all:before {
+  content: "\e920";
+}
+.icon-view-all-type:before {
+  content: "\e921";
+}
+.icon-solutionpack-02:before {
+  content: "\e922";
+}
+.icon-solutionpack-large:before {
+  content: "\e923";
+}
