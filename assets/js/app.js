@@ -2,8 +2,9 @@
 
 const http = new XMLHttpRequest();
 
-var yumRepo = 'https://repo.fortisoar.fortinet.com/';
-var basePath = 'https://fortisoar.contenthub.fortinet.com/';
+var yumRepo = 'https://repo.fortisoar.fortinet.com/xf/';
+// var basePath = 'https://fortisoar.contenthub.fortinet.com/';
+var basePath = 'https://fortinet-fortisoar.github.io/xf-contenthub-dev/';
 var listItems = [];
 var listItemsBkp;
 var showContentTypeClearFilter = false;
