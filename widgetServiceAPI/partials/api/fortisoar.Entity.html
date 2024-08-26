@@ -1,0 +1,136 @@
+<h1><code ng:non-bindable="">Entity</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-entity-page"><p>The <code>Entity</code> service is a prototyped object that represents a module and all
+of its metadata and fields. Handles loading and population of data
+based on permissions, module name, and id. Takes care of adding, and removing
+relationships, and transforming form data.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.PromiseQueue">PromiseQueue</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.usersService">usersService</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_applydefaultvalues">applyDefaultValues()</h3>
+<div class="applydefaultvalues"><div class="fortisoar-entity-applydefaultvalues-page"><p>This function will set the default value to all the fields.</p>
+</div></div>
+</li>
+<li><h3 id="methods_delete">delete()</h3>
+<div class="delete"><div class="fortisoar-entity-delete-page"><p>This function will delete the entity.</p>
+</div><h5 id="methods_delete_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-delete-page"><p>Promise object that on success will delete the entity instance.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_evaluate">evaluate(query)</h3>
+<div class="evaluate"><div class="fortisoar-entity-evaluate-page"><p>This function will evaluate the query filters.</p>
+</div><h5 id="methods_evaluate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>query</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-evaluate-page"><p>Object of query filters.</p>
+</div></td></tr></tbody></table><h5 id="methods_evaluate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-evaluate-page"><p>Object of the evaluated query filters.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_evaluateallfields">evaluateAllFields()</h3>
+<div class="evaluateallfields"><div class="fortisoar-entity-evaluateallfields-page"><p>This function will evaluate the visibility and required filters for all the entity fields.</p>
+</div></div>
+</li>
+<li><h3 id="methods_get">get(id, userParams, ignoreErrors, refresh)</h3>
+<div class="get"><div class="fortisoar-entity-get-page"><p>This function will return the fields property.</p>
+</div><h5 id="methods_get_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>id</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-entity-get-page"><p>UUID of the record.</p>
+</div></td></tr><tr><td>userParams <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-get-page"><p>A filter object to add extra filters such as <code>{ $relatioships: true }</code>.</p>
+</div></td></tr><tr><td>ignoreErrors <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-get-page"><p>If true, errors will be ignored while fetching module data, else errors will be catched.</p>
+</div></td></tr><tr><td>refresh <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-get-page"><p>If true, latest fields will be loaded.</p>
+</div></td></tr></tbody></table><h5 id="methods_get_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-get-page"><p>Promise object that on success will populate the fields properties on the entity instance based on the loaded data.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getemptyrequiredfields">getEmptyRequiredFields()</h3>
+<div class="getemptyrequiredfields"><div class="fortisoar-entity-getemptyrequiredfields-page"><p>This function will return array of fields which are required with no value.</p>
+</div><h5 id="methods_getemptyrequiredfields_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getemptyrequiredfields-page"><p>Array of fields which are required with no value.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getemptyrequiredfieldsobject">getEmptyRequiredFieldsObject()</h3>
+<div class="getemptyrequiredfieldsobject"><div class="fortisoar-entity-getemptyrequiredfieldsobject-page"><p>This function will return object of fields which are required with no value.</p>
+</div><h5 id="methods_getemptyrequiredfieldsobject_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-getemptyrequiredfieldsobject-page"><p>Object of fields which are required with no value</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getexportdata">getExportData()</h3>
+<div class="getexportdata"><div class="fortisoar-entity-getexportdata-page"><p>This function will return the values to export.</p>
+</div><h5 id="methods_getexportdata_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-getexportdata-page"><p>Promise object that on success will export in CSV fortmat.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getfieldtitles">getFieldTitles()</h3>
+<div class="getfieldtitles"><div class="fortisoar-entity-getfieldtitles-page"><p>The purpose of the method is to get titles of all fields.</p>
+</div><h5 id="methods_getfieldtitles_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getfieldtitles-page"><p>Returns the array of all the fields title.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getformfields">getFormFields(sorted)</h3>
+<div class="getformfields"><div class="fortisoar-entity-getformfields-page"><p>This function will return the object of form fields including the system fields of the entity.</p>
+</div><h5 id="methods_getformfields_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>sorted <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-getformfields-page"><p>To get the result in sorted format.</p>
+</div></td></tr></tbody></table><h5 id="methods_getformfields_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-getformfields-page"><p>Object of form fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getformfieldsarray">getFormFieldsArray()</h3>
+<div class="getformfieldsarray"><div class="fortisoar-entity-getformfieldsarray-page"><p>This function will return the form fields array including the system fields of the entity.</p>
+</div><h5 id="methods_getformfieldsarray_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getformfieldsarray-page"><p>Array of form fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getformfieldsarraywithoutsystem">getFormFieldsArrayWithoutSystem()</h3>
+<div class="getformfieldsarraywithoutsystem"><div class="fortisoar-entity-getformfieldsarraywithoutsystem-page"><p>This function will return the array of form fields excluding the system fields of the entity.</p>
+</div><h5 id="methods_getformfieldsarraywithoutsystem_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getformfieldsarraywithoutsystem-page"><p>Array of form fields without system fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getformfieldswithoutsystem">getFormFieldsWithoutSystem()</h3>
+<div class="getformfieldswithoutsystem"><div class="fortisoar-entity-getformfieldswithoutsystem-page"><p>This function will return the object of form fields excluding the system fields of the entity.</p>
+</div><h5 id="methods_getformfieldswithoutsystem_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-getformfieldswithoutsystem-page"><p>Object of form fields without system fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getrelationship">getRelationship(fieldName, getObjects, recordSize, columns)</h3>
+<div class="getrelationship"><div class="fortisoar-entity-getrelationship-page"><p>Get relationship data for the field.</p>
+</div><h5 id="methods_getrelationship_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>fieldName</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-entity-getrelationship-page"><p>Name of the field.</p>
+</div></td></tr><tr><td>getObjects <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-getrelationship-page"><p>Get result in object format.</p>
+</div></td></tr><tr><td>recordSize <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-integer">Integer</a></td><td><div class="fortisoar-entity-getrelationship-page"><p>Maximum record size to fetch.</p>
+</div></td></tr><tr><td>columns <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getrelationship-page"><p>Array of field name only which we want to fetch and ignore other fields.</p>
+</div></td></tr></tbody></table><h5 id="methods_getrelationship_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-getrelationship-page"><p>Returns resolved promise on success with fields relationship data, else returns reject promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getrelationshipfields">getRelationshipFields()</h3>
+<div class="getrelationshipfields"><div class="fortisoar-entity-getrelationshipfields-page"><p>This function will return the object of relationship fields of the entity.</p>
+</div><h5 id="methods_getrelationshipfields_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-getrelationshipfields-page"><p>Object of relationship fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getrelationshipfieldsarray">getRelationshipFieldsArray()</h3>
+<div class="getrelationshipfieldsarray"><div class="fortisoar-entity-getrelationshipfieldsarray-page"><p>This function will return the array of relationship fields of the entity.</p>
+</div><h5 id="methods_getrelationshipfieldsarray_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-getrelationshipfieldsarray-page"><p>Array of relationship fields.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_hasemptyrequiredfields">hasEmptyRequiredFields()</h3>
+<div class="hasemptyrequiredfields"><div class="fortisoar-entity-hasemptyrequiredfields-page"><p>The purpose of the method is to verify all required fields to check if the value is set or not.</p>
+</div><h5 id="methods_hasemptyrequiredfields_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-hasemptyrequiredfields-page"><p>Boolean value based on whether is there any required field with no value present.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadallrelationships">loadAllRelationships()</h3>
+<div class="loadallrelationships"><div class="fortisoar-entity-loadallrelationships-page"><p>Loads relationship fields of the particular module.</p>
+</div><h5 id="methods_loadallrelationships_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-loadallrelationships-page"><p>Returns resolved promise in case relationships fields are loaded successfully, else returns reject promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadfields">loadFields(mode, ignoreRBAC)</h3>
+<div class="loadfields"><div class="fortisoar-entity-loadfields-page"><p>Load fields of the module.</p>
+</div><h5 id="methods_loadfields_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>mode <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-entity-loadfields-page"><p>Mode of operation like &#39;add&#39;, &#39;edit&#39;, etc.</p>
+</div></td></tr><tr><td>ignoreRBAC <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-entity-loadfields-page"><p>If true, field permissions will be ignored.</p>
+</div></td></tr></tbody></table><h5 id="methods_loadfields_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-loadfields-page"><p>Returns resolved promise in case fields are loaded successfully, else returns reject promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_save">save(data, params, fieldsToKeep)</h3>
+<div class="save"><div class="fortisoar-entity-save-page"><p>This function will save the entity.</p>
+</div><h5 id="methods_save_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-save-page"><p>Name of the field.</p>
+</div></td></tr><tr><td>params <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-entity-save-page"><p>Other optional parameters.</p>
+</div></td></tr><tr><td>fieldsToKeep <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-entity-save-page"><p>List of fields which we don&#39;t want to update.</p>
+</div></td></tr></tbody></table><h5 id="methods_save_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-entity-save-page"><p>Returns resolved promise on success, else returns reject promise.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

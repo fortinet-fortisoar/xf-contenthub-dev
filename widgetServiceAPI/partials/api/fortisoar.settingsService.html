@@ -1,0 +1,43 @@
+<h1><code ng:non-bindable="">settingsService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-settingsservice-page"><p>The <code>settingsService</code> gets and sets user and system settings.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.usersService">usersService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.PromiseQueue">PromiseQueue</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_get">get(key)</h3>
+<div class="get"><div class="fortisoar-settingsservice-get-page"><p>Get the settings value for provided key.</p>
+</div><h5 id="methods_get_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-settingsservice-get-page"><p>string representing a key in a user&#39;s settings.
+The key is delimited by <code>/</code>. Given the example below,
+to get the theme value you would provide <code>user/view/theme</code> as the key.</p>
+</div></td></tr></tbody></table><h5 id="methods_get_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-settingsservice-get-page"><p>The value of the setting or empty string if not found.</p>
+</div></td></tr></table><h4 id="methods_get_example">Example</h4>
+<div class="example"><div class="fortisoar-settingsservice-get-page"><p>user: {
+view: {
+  theme: &#39;dark&#39;
+}
+}</p>
+</div></div>
+</div>
+</li>
+<li><h3 id="methods_getsystem">getSystem()</h3>
+<div class="getsystem"><div class="fortisoar-settingsservice-getsystem-page"><p>Checks local storage for the system settings. If they are not in
+storage, it falls back to checking whether another promise to get them
+has already been set. If one has not been set, then an API request is
+made to retrieve them and store them in local storage.</p>
+</div><h5 id="methods_getsystem_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-settingsservice-getsystem-page"><p>A promise that is resolved with the system settings.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

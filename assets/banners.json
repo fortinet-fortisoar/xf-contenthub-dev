@@ -3,7 +3,7 @@
     "subHeading": "FortiSOAR Content Hub is a collection of solution extensions that help you to derive more meaning from your FortiSOAR application",
     "description": "",
     "hyperLink": "/list.html?contentType=all",
-    "imagePath": "assets/images/main_banner_1.png",
+    "imagePath": "",
     "hyperLinkText": "Explore Content Hub",
     "backgroundColorType": "dark"
   },
@@ -12,50 +12,66 @@
     "subHeading": "A well-researched and community vetted solution pack to streamline and accelerate your SOAR journey.",
     "description": "",
     "hyperLink": "/detail.html?entity=sOARFramework&version=1.0.0&type=solutionpack",
-    "imagePath": "assets/images/main_banner_2.png",
+    "imagePath": "",
     "hyperLinkText": "Explore SOAR Framework Pack",
     "backgroundColorType": "dark"
   },
   {
     "heading": "Featured - Threat Intelligence Management Solution Pack",
-    "subHeading": "Allows you to imbibe and adapt to threat intel management workflows and best practices and build a threat intel fused incident investigation process",
+    "subHeading": "Allows you to imbibe and adapt to threat intel management workflows and best practices and build a threat intel fused incident investigation",
     "description": "",
     "hyperLink": "/detail.html?entity=threat-intel-management&version=1.0.0&type=solutionpack",
-    "imagePath": "assets/images/main_banner_3.png",
+    "imagePath": "",
     "hyperLinkText": "Explore Threat Intel Management Pack",
     "backgroundColorType": "dark"
   },
   {
     "heading": "Gartner Peer Insights Reviews",
-    "subHeading": "Many enterprise customers realize the power and effectiveness of FortiSOAR and have provided positive feedback on Gartner Peer Insights.",
+    "subHeading": "Many enterprise customers realize the power & effectiveness of FortiSOAR & have provided positive feedback on Gartner Peer Insights.",
     "description": "",
     "hyperLink": "https://www.gartner.com/reviews/market/security-orchestration-automation-and-response-solutions/vendor/fortinet/product/fortisoar",
-    "imagePath": "assets/images/main_banner.png",
+    "imagePath": "",
     "hyperLinkText": "View Reviews",
-    "backgroundColorType": "light"
+    "backgroundColorType": "dark"
   }],
 "updatesBanner": [{
-    "heading": "FortiSOAR Solution Highlights",
-    "subHeading": "FortiSOAR helps to streamline your SOC and empowering it to orchestrate and automate accelerated and informed threat responses.",
-    "description": "",
-    "hyperLink": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortisoar.pdf",
-    "imagePath": "assets/images/updates_banner_1.png",
-    "hyperLinkText": "View Data Sheet"
+    "heading": "FortiSOAR v7.4.3: Introducing Fortinet Advisor for AI-Enhanced Security Orchestration",
+    "subHeading": "Artificial Intelligence",
+    "description": "FortiSOAR has unveiled its latest release, version 7.4.3, featuring groundbreaking innovations aimed at enhancing user experience and efficiency. One notable introduction is the Fortinet Advisor, currently in its preview version, serving as an AI assistant tailored for FortiSOAR users and compatible with version 7.4.3 and later.",
+    "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Announcements/FortiSOAR-v7-4-3-Introducing-Fortinet-Advisor-for-AI-Enhanced/ta-p/289240",
+    "imagePath": "assets/images/product_updates_01.png",
+    "hyperLinkText": ""
   },
   {
-    "heading": "FortiSOAR Community - Technical Help and FAQs",
-    "subHeading": "Well curated and updated technical help and FAQs available for your reference.",
-    "description": "",
-    "hyperLink": "https://community.fortinet.com/t5/forums/searchpage/tab/message?searchString=fortisoar&from=0&sortby=post_time&orderBy=desc&pageNo=1&aggregations=%5B%5D&uid=8021d0dd-1517-11ec-b3e2-0242ac12000d&resultsPerPage=10&exactPhrase=&withOneOrMore=&withoutTheWords=&pageSize=10&language=en&state=2&suCaseCreate=false",
-    "imagePath": "assets/images/updates_banner_3.png",
-    "hyperLinkText": "Explore FAQs"
+    "heading": "FortiSOAR Outbreak Response Framework Overview",
+    "subHeading": "Zero Day Exploit",
+    "description": "A new FortiGuard Outbreak Detection Service is now available through FortiSOAR™'s Outbreak Response Framework Solution Pack.",
+    "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/FortiSOAR-Outbreak-Response-Framework-Overview/td-p/285701",
+    "imagePath": "assets/images/product_updates_02.png",
+    "hyperLinkText": ""
   },
   {
-    "heading": "FortiSOAR Community – Forums, Updates and Interactions",
-    "subHeading": "Participate in community discussions, request a feature, tune in to product updates and much more",
+    "heading": "FortiSOAR Rapid Development Kit v2.0.0 Release Announcement",
+    "subHeading": "Facilitating Community Submission",
+    "description": "We are delighted to introduce FortiSOAR Rapid Development Kit (RDK) Version 2.0.0, bringing a myriad of user-centric enhancements to empower your journey in creating seamless third-party integrations and utility code snippets for FortiSOAR.",
+    "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/FortiSOAR-Rapid-Development-Kit-v2-0-0-Release-Announcement/td-p/291179",
+    "imagePath": "assets/images/product_updates_03.png",
+    "hyperLinkText": ""
+  },
+  {
+    "heading": "GDPR Article 33 Notification with FortiSOAR GDPR Framework Solution Pack",
+    "subHeading": "Compliance",
+    "description": "The GDPR Framework solution pack serves as a valuable resource for organizations striving to comply with the General Data Protection Regulation (GDPR) guidelines.",
+    "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/GDPR-Article-33-Notification-with-FortiSOAR-GDPR-Framework/td-p/275728",
+    "imagePath": "assets/images/product_updates_04.png",
+    "hyperLinkText": ""
+  }],
+ "announcementBanner": [{
+    "heading": "Announcement",
+    "subHeading": "Announcing the general availability (GA) of FortiSOAR v7.2.2!",
     "description": "",
-    "hyperLink": "https://fusecommunity.fortinet.com/groups/community-home?CommunityKey=9f1420e8-e3c6-4535-8cae-3fa714da66d8",
-    "imagePath": "assets/images/updates_banner_2.png",
-    "hyperLinkText": "Explore Community"
+    "hyperLink": "https://www.fortinet.com/",
+    "imagePath": "",
+    "hyperLinkText": "Learn More"
   }]
 }

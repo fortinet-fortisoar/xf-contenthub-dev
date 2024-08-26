@@ -1,24 +1,27 @@
 <div class="sidebar-content navbar-expand-lg">
-  <div class="d-flex justify-content-between">
-    <h5 class="sidebar-title fw-normal">Filters</h5>
-    <button type="button" class="btn btn-sm btn-default clear-filter-btn shadow-none" onClick="clearFilter('all')" id="clear-all-filter-btn" title="Clear All"><i class="fa fa-close"></i></button>
+  <div class="d-flex justify-content-between mt-3">
+    <h5 class="sidebar-title fw-normal text-light"><i class="icon icon-filter me-2" aria-hidden="true"></i> Filters</h5>
+    <button type="button" class="btn clear-filter-btn shadow-none mt-3 mx-3" onClick="clearFilter('all')"
+      id="clear-all-filter-btn" title="Clear All">Clear All</button>
   </div>
   <div class="accordion accordion-flush" id="accordionFilter">
     <!--Content Type-->
-    <div class="accordion-item">
+    <div class="accordion-item mt-4">
       <h2 class="accordion-header d-flex" id="filterByContentType">
-        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button text-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseContentType" aria-expanded="false" aria-controls="collapseContentType">
           Content Type
         </button>
-        <button type="button" class="btn btn-sm clear-filter-btn shadow-none" onClick="clearFilter('contentType')" id="clear-contenttype-filter-btn" title="Clear"><i class="fa fa-close"></i></button>
+        <button type="button" class="btn clear-filter-btn shadow-none mt-3 mx-3" onClick="clearFilter('contentType')"
+          id="clear-contenttype-filter-btn" title="Clear">Clear</button>
       </h2>
       <div id="collapseContentType" class="accordion-collapse collapse show" aria-labelledby="filterByContentType"
         data-bs-parent="#accordionFilter">
         <div class="accordion-body">
           <div class="filter-search-input global-search-input-sm">
-              <input class="form-control" type="text" id="searchContent" name="searchContent" placeholder="Search" onChange="submitSearchFilter(this, 'contentType')"/>
-              <i class="fa fa-search searchIcon"></i>
+            <input class="form-control" type="text" id="searchContent" name="searchContent" placeholder="Search"
+              onChange="submitSearchFilter(this, 'contentType')" />
+            <i class="fa fa-search searchIcon"></i>
           </div>
           <ul class="filter-list-input mt-3" id="filter-contenttype-list">
           </ul>
@@ -29,18 +32,20 @@
     <!--Category-->
     <div class="accordion-item">
       <h2 class="accordion-header d-flex" id="filterByCategory">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapseCategory" aria-expanded="false" aria-controls="collapseCategory">
           Category
         </button>
-        <button type="button" class="btn btn-sm clear-filter-btn shadow-none" onClick="clearFilter('category')" id="clear-category-filter-btn" title="Clear"><i class="fa fa-close"></i></button>
+        <button type="button" class="btn clear-filter-btn shadow-none mt-3 mx-3" onClick="clearFilter('category')"
+          id="clear-category-filter-btn" title="Clear">Clear</button>
       </h2>
       <div id="collapseCategory" class="accordion-collapse collapse" aria-labelledby="filterByCategory"
         data-bs-parent="#accordionFilter">
         <div class="accordion-body">
           <div class="filter-search-input global-search-input-sm">
-              <input class="form-control" type="text" id="searchCategory" name="searchCategory" placeholder="Search" onChange="submitSearchFilter(this, 'category')"/>
-              <i class="fa fa-search searchIcon"></i>
+            <input class="form-control" type="text" id="searchCategory" name="searchCategory" placeholder="Search"
+              onChange="submitSearchFilter(this, 'category')" />
+            <i class="fa fa-search searchIcon"></i>
           </div>
           <ul class="filter-list-input mt-3" id="filter-category-list">
           </ul>
@@ -51,18 +56,20 @@
     <!--Publisher-->
     <div class="accordion-item">
       <h2 class="accordion-header d-flex" id="filterByPublisher">
-        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+        <button class="accordion-button collapsed text-light" type="button" data-bs-toggle="collapse"
           data-bs-target="#collapsePublisher" aria-expanded="false" aria-controls="collapsePublisher">
           Publisher
         </button>
-        <button type="button" class="btn btn-sm clear-filter-btn shadow-none" onClick="clearFilter('publisher')" id="clear-publisher-filter-btn" title="Clear"><i class="fa fa-close"></i></button>
+        <button type="button" class="btn clear-filter-btn shadow-none mt-3 mx-3" onClick="clearFilter('publisher')"
+          id="clear-publisher-filter-btn" title="Clear">Clear</button>
       </h2>
       <div id="collapsePublisher" class="accordion-collapse collapse" aria-labelledby="filterByPublisher"
         data-bs-parent="#accordionFilter">
         <div class="accordion-body">
           <div class="filter-search-input global-search-input-sm">
-              <input class="form-control" type="text" id="searchPublisher" name="searchPublisher" placeholder="Search" onChange="submitSearchFilter(this, 'publisher')"/>
-              <i class="fa fa-search searchIcon"></i>
+            <input class="form-control" type="text" id="searchPublisher" name="searchPublisher" placeholder="Search"
+              onChange="submitSearchFilter(this, 'publisher')" />
+            <i class="fa fa-search searchIcon"></i>
           </div>
           <ul class="filter-list-input mt-3" id="filter-publisher-list">
           </ul>

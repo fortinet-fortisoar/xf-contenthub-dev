@@ -1,0 +1,68 @@
+<h1><code ng:non-bindable="">modelMetadatasService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-modelmetadatasservice-page"><p>The <code>modelMetadatasService</code> loads model metadata and retrieves information from it.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getiribytype">getIriByType(type)</h3>
+<div class="getiribytype"><div class="fortisoar-modelmetadatasservice-getiribytype-page"><p>Retrieves a model metadata IRI from a given module type.</p>
+</div><h5 id="methods_getiribytype_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>type</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-getiribytype-page"><p>The type of the model metadata by which to retrieve the IRI.</p>
+</div></td></tr></tbody></table><h5 id="methods_getiribytype_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-getiribytype-page"><p>The IRI of the model metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getmetadatabymoduletype">getMetadataByModuleType(type)</h3>
+<div class="getmetadatabymoduletype"><div class="fortisoar-modelmetadatasservice-getmetadatabymoduletype-page"><p>Retrieves a model metadata type from a given module type.</p>
+</div><h5 id="methods_getmetadatabymoduletype_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>type</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-getmetadatabymoduletype-page"><p>The type of the model metadata by which to retrieve the type.</p>
+</div></td></tr></tbody></table><h5 id="methods_getmetadatabymoduletype_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-getmetadatabymoduletype-page"><p>Returns module metadata as per the provided module type.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getmodulelist">getModuleList()</h3>
+<div class="getmodulelist"><div class="fortisoar-modelmetadatasservice-getmodulelist-page"><p>Checks local storage for the model metadata. If they are not in
+storage, it falls back to checking whether another promise to get them
+has already been set. If one has not been set, then an API request is
+made to retrieve them and store them in local storage.</p>
+</div><h5 id="methods_getmodulelist_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-modelmetadatasservice-getmodulelist-page"><p>A promise that is resolved with model metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getmodulenamebytype">getModuleNameByType(moduleTypes, isPlural)</h3>
+<div class="getmodulenamebytype"><div class="fortisoar-modelmetadatasservice-getmodulenamebytype-page"><p>Retrieves a model name in singular or plural form from local storage by using a given module type.</p>
+</div><h5 id="methods_getmodulenamebytype_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>moduleTypes</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-modelmetadatasservice-getmodulenamebytype-page"><p>Array of the modules</p>
+</div></td></tr><tr><td>isPlural</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="fortisoar-modelmetadatasservice-getmodulenamebytype-page"><p>boolean value to return name in singular or plural form</p>
+</div></td></tr></tbody></table><h5 id="methods_getmodulenamebytype_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-modelmetadatasservice-getmodulenamebytype-page"><p>Array of name of the module lists</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_gettenantmodulelist">getTenantModuleList(tenantUuid)</h3>
+<div class="gettenantmodulelist"><div class="fortisoar-modelmetadatasservice-gettenantmodulelist-page"><p>This function will return the module metadata of the specific tenant based on the tenant UUID.</p>
+</div><h5 id="methods_gettenantmodulelist_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>tenantUuid <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-gettenantmodulelist-page"><p>This is the uuid of the tenant.</p>
+</div></td></tr></tbody></table><h5 id="methods_gettenantmodulelist_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-modelmetadatasservice-gettenantmodulelist-page"><p>A promise that is resolved with tenant module metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_gettenantstaggingmodule">getTenantStaggingModule(tenantUuid, moduleUuid)</h3>
+<div class="gettenantstaggingmodule"><div class="fortisoar-modelmetadatasservice-gettenantstaggingmodule-page"><p>This function will return the stagging module metadata of the tenant based tenant uuid and module id.</p>
+</div><h5 id="methods_gettenantstaggingmodule_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>tenantUuid</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-gettenantstaggingmodule-page"><p>This is the uuid of the tenant.</p>
+</div></td></tr><tr><td>moduleUuid</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-gettenantstaggingmodule-page"><p>This is the uuid of the module.</p>
+</div></td></tr></tbody></table><h5 id="methods_gettenantstaggingmodule_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-modelmetadatasservice-gettenantstaggingmodule-page"><p>A promise that is resolved with success will populate the stagging module metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadallmodules">loadAllModules(forceUpdate)</h3>
+<div class="loadallmodules"><div class="fortisoar-modelmetadatasservice-loadallmodules-page"><p>Loads all modules along with the system modules.</p>
+</div><h5 id="methods_loadallmodules_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>forceUpdate <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-modelmetadatasservice-loadallmodules-page"><p>On true fetch latest model metadata else uses data from localstorage.</p>
+</div></td></tr></tbody></table><h5 id="methods_loadallmodules_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-modelmetadatasservice-loadallmodules-page"><p>A promise that is resolved with module metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_publishtenant">publishTenant(tenantUuid)</h3>
+<div class="publishtenant"><div class="fortisoar-modelmetadatasservice-publishtenant-page"><p>This function will start the publish on tenant based on the tenant UUID.</p>
+</div><h5 id="methods_publishtenant_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>tenantUuid</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-modelmetadatasservice-publishtenant-page"><p>This is the uuid of the tenant.</p>
+</div></td></tr></tbody></table><h5 id="methods_publishtenant_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-modelmetadatasservice-publishtenant-page"><p>A promise that is resolved with success of publish.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

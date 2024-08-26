@@ -1,0 +1,53 @@
+<h1><code ng:non-bindable="">Query</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-query-page"><p>The <code>Query</code> service provides an object that represents API query parameters
+and filters and exposes methods for manipulating and retrieving data about
+them.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_buildorderforpostrequest">buildOrderForPostRequest(entity, queryParam)</h3>
+<div class="buildorderforpostrequest"><div class="fortisoar-query-buildorderforpostrequest-page"><p>Update query param object&#39;s sort data as per required order for POST request call.</p>
+</div><h5 id="methods_buildorderforpostrequest_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>entity</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-buildorderforpostrequest-page"><p>Requires <code>entity</code> object.</p>
+</div></td></tr><tr><td>queryParam</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-buildorderforpostrequest-page"><p>Requires query object.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_getflatquery">getFlatQuery(entity)</h3>
+<div class="getflatquery"><div class="fortisoar-query-getflatquery-page"><p>Returns proper evaluated query.</p>
+</div><h5 id="methods_getflatquery_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>entity <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-getflatquery-page"><p>Takes input as <code>entity</code> Object.</p>
+</div> <p><em>(default: undefined)</em></p></td></tr></tbody></table><h5 id="methods_getflatquery_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-getflatquery-page"><p>Provides flat <code>query</code> object.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getquery">getQuery(useValue, dataMode)</h3>
+<div class="getquery"><div class="fortisoar-query-getquery-page"><p>Forms query object with all required parameters.
+Query Object Parameters: 
+sort, limit, logic, search, showDeleted, filters, $relationships, aggregates, __selectFields</p>
+</div><h5 id="methods_getquery_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>useValue <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-query-getquery-page"><p>Flag used for datetime identifier in the conditional filter.</p>
+</div></td></tr><tr><td>dataMode <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-query-getquery-page"><p>Takes input as string i.e., &#39;edit&#39;, &#39;view&#39; etc.</p>
+</div></td></tr></tbody></table><h5 id="methods_getquery_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-getquery-page"><p>Return query object.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getquerymodifiers">getQueryModifiers(entity)</h3>
+<div class="getquerymodifiers"><div class="fortisoar-query-getquerymodifiers-page"><p>Modifies query modifiers i.e., limit to $limit, page to $page.</p>
+</div><h5 id="methods_getquerymodifiers_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>entity <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-getquerymodifiers-page"><p>Takes input as <code>entity</code> object.</p>
+</div> <p><em>(default: undefined)</em></p></td></tr></tbody></table><h5 id="methods_getquerymodifiers_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-getquerymodifiers-page"><p>Returns <code>query</code> object with modifiers.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_updatefilter">updateFilter(filter, type)</h3>
+<div class="updatefilter"><div class="fortisoar-query-updatefilter-page"><p>Updates filter object.</p>
+</div><h5 id="methods_updatefilter_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>filter</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-updatefilter-page"><p>Provide a filter condition.</p>
+</div></td></tr><tr><td>type</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-query-updatefilter-page"><p>Provide field type.</p>
+</div></td></tr></tbody></table><h5 id="methods_updatefilter_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-query-updatefilter-page"><p>Returns updated filter object.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_updatefilters">updateFilters(filters)</h3>
+<div class="updatefilters"><div class="fortisoar-query-updatefilters-page"><p>Updates filter array.</p>
+</div><h5 id="methods_updatefilters_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>filters</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-query-updatefilters-page"><p>Requires updated array of filter objects.</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,59 @@
+<h1><code ng:non-bindable="">currentPermissionsService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-currentpermissionsservice-page"><p>The purpose of the <code>currentPermissionsService</code> is to get module specific permission details.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_availablefieldpermission">availableFieldPermission(module, fieldName, action)</h3>
+<div class="availablefieldpermission"><div class="fortisoar-currentpermissionsservice-availablefieldpermission-page"><p>The purpose of this method is to find the permission for specific actions 
+like &#39;read/write/update/delete&#39; for the provided modules field.</p>
+</div><h5 id="methods_availablefieldpermission_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>module</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-currentpermissionsservice-availablefieldpermission-page"><p>Name of the module.</p>
+</div></td></tr><tr><td>fieldName</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-currentpermissionsservice-availablefieldpermission-page"><p>Field name of the module.</p>
+</div></td></tr><tr><td>action</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-currentpermissionsservice-availablefieldpermission-page"><p>Type of permission e.g read, delete, update, create</p>
+</div></td></tr></tbody></table><h5 id="methods_availablefieldpermission_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-currentpermissionsservice-availablefieldpermission-page"><p>True if field have provided permission else return false.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_availablepermission">availablePermission(module, action)</h3>
+<div class="availablepermission"><div class="fortisoar-currentpermissionsservice-availablepermission-page"><p>The purpose of this method is to find the permission for specific actions 
+like &#39;read/write/update/delete&#39; for the provided module.</p>
+</div><h5 id="methods_availablepermission_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>module</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermission-page"><p>Module name.</p>
+</div></td></tr><tr><td>action</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermission-page"><p>Type of permission e.g read, delete, update, create</p>
+</div></td></tr></tbody></table><h5 id="methods_availablepermission_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermission-page"><p>True if module have specified permission else return false.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_availablepermissions">availablePermissions(modules, action)</h3>
+<div class="availablepermissions"><div class="fortisoar-currentpermissionsservice-availablepermissions-page"><p>The purpose of this method is to find the permission for specific actions 
+like &#39;read/write/update/delete&#39; for the provided list of modules.</p>
+</div><h5 id="methods_availablepermissions_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>modules</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermissions-page"><p>Array of all modules.</p>
+</div></td></tr><tr><td>action</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermissions-page"><p>Type of permission e.g read, delete, update, create</p>
+</div></td></tr></tbody></table><h5 id="methods_availablepermissions_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-currentpermissionsservice-availablepermissions-page"><p>List of modules which have the provided permission.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_get">get()</h3>
+<div class="get"><div class="fortisoar-currentpermissionsservice-get-page"><p>The purpose of this method is to get all the module permissions for the currently logged-in user.</p>
+</div><h5 id="methods_get_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-currentpermissionsservice-get-page"><p>Details of modules with it&#39;s permission.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getpermission">getPermission(module)</h3>
+<div class="getpermission"><div class="fortisoar-currentpermissionsservice-getpermission-page"><p>This function return all the permissions of specified module.</p>
+</div><h5 id="methods_getpermission_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>module</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-currentpermissionsservice-getpermission-page"><p>Name of the module to fetch permissions.</p>
+</div></td></tr></tbody></table><h5 id="methods_getpermission_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-currentpermissionsservice-getpermission-page"><p>Details of module with it&#39;s permission.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getpermissions">getPermissions(modules)</h3>
+<div class="getpermissions"><div class="fortisoar-currentpermissionsservice-getpermissions-page"><p>This function return all the permissions of multiple modules.</p>
+</div><h5 id="methods_getpermissions_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>modules</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-currentpermissionsservice-getpermissions-page"><p>Array of module names to fetch permissions.</p>
+</div></td></tr></tbody></table><h5 id="methods_getpermissions_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-currentpermissionsservice-getpermissions-page"><p>Details of modules with it&#39;s permissions.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_isadmin">isAdmin()</h3>
+<div class="isadmin"><div class="fortisoar-currentpermissionsservice-isadmin-page"><p>The purpose if method is to get the status of logged in user&#39;s&#39; security update permission.</p>
+</div><h5 id="methods_isadmin_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-currentpermissionsservice-isadmin-page"><p>True if logged in user have security update permission else return false.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

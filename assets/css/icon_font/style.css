@@ -13,7 +13,6 @@
 [class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'marketplace_fortisoar' !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -43,13 +42,15 @@
 .icon-dashboard-border:before {
   content: "\e905";
 }
-.icon-howtovideos-type:before {
+.icon-howtos-type:before,
+.icon-demovideos-type:before,
+.icon-datasheet-type:before {
   content: "\e906";
 }
-.icon-howtovideos:before {
+.icon-howtos:before {
   content: "\e907";
 }
-.icon-howtovideos-border:before {
+.icon-howtos-border:before {
   content: "\e908";
 }
 .icon-playbook-type:before {
@@ -117,4 +118,39 @@
 }
 .icon-solutionpack-large:before {
   content: "\e923";
+}
+.icon-subscribe:before {
+  content: "\e924";
+}
+.icon-light-mode:before {
+  content: "\e925";
+}
+.icon-home:before {
+  content: "\e926";
+}
+.icon-dark-mode:before {
+  content: "\e927";
+}
+.icon-accessibility:before {
+  content: "\e928";
+}
+.icon-filter:before {
+  content: "\e929";
+}
+.icon-howtos-large:before,
+.icon-demovideos-large:before,
+.icon-datasheet-large:before {
+  content: "\e91d";
+}
+.icon-verified:before {
+  content: "\e91a";
+}
+.icon-featured-badge:before {
+  content: "\e91b";
+}
+.icon-arrow-right-line:before {
+  content: "\e91c";
+}
+.icon-arrow-left-line:before {
+  content: "\e91e";
 }

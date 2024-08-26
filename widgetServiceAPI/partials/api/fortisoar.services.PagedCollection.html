@@ -1,0 +1,105 @@
+<h1><code ng:non-bindable="">PagedCollection</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-services-page fortisoar-services-pagedcollection-page"><p>PagedCollection service creates objects that work against the paged crud-hub API.
+This is the base class that other PagedCollection child classes would use.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_buildsortquery">buildSortQuery(sortColumns)</h3>
+<div class="buildsortquery"><div class="fortisoar-services-page fortisoar-services-pagedcollection-buildsortquery-page"><p>Builds sort query.</p>
+</div><h5 id="methods_buildsortquery_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>sortColumns</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-buildsortquery-page"><p>Takes input as columns.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_converttokeypairs">convertToKeyPairs()</h3>
+<div class="converttokeypairs"><div class="fortisoar-services-page fortisoar-services-pagedcollection-converttokeypairs-page"><p>Converts <code>hydra:member</code> records to key pairs.</p>
+</div><h5 id="methods_converttokeypairs_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-converttokeypairs-page"><p>Returns promise for converting hydra:member to Field rows.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_extendfilter">extendFilter(_config, value, field)</h3>
+<div class="extendfilter"><div class="fortisoar-services-page fortisoar-services-pagedcollection-extendfilter-page"><p>Extends filter condition.</p>
+</div><h5 id="methods_extendfilter_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>_config</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-extendfilter-page"><p>Takes input as <code>query</code> object.</p>
+</div></td></tr><tr><td>value</td><td><a href="" class="label type-hint type-hint-object">*</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-extendfilter-page"><p>Add <code>null</code> as value, not required, doesn&#39;t have any impact.</p>
+</div></td></tr><tr><td>field</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-extendfilter-page"><p>Takes input as <code>field</code> object.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_gotopage">gotoPage(params)</h3>
+<div class="gotopage"><div class="fortisoar-services-page fortisoar-services-pagedcollection-gotopage-page"><p>Navigate to specific page for data.</p>
+</div><h5 id="methods_gotopage_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-gotopage-page"><p>Calls loadGridRecord method on objects &#39;loadByPost&#39; property,
+else forms page URL as per provided properties and calls API to get results.</p>
+</div></td></tr></tbody></table><h5 id="methods_gotopage_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-gotopage-page"><p>Returns specific page data as promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_load">load(customQuery, customColumns, relationshipKey)</h3>
+<div class="load"><div class="fortisoar-services-page fortisoar-services-pagedcollection-load-page"><p>Loads all records with customQuery, customColumns and relationship.</p>
+</div><h5 id="methods_load_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>customQuery <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-load-page"><p>Takes input as query params.</p>
+</div></td></tr><tr><td>customColumns <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-load-page"><p>Takes input as columns as fieldName.</p>
+</div></td></tr><tr><td>relationshipKey <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-load-page"><p>Takes input to load relationship.</p>
+</div></td></tr></tbody></table><h5 id="methods_load_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-load-page"><p>Updates pagedCollection records.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadbypost">loadByPost(config, sortApplied)</h3>
+<div class="loadbypost"><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadbypost-page"><p>Loads grid data by <code>POST</code> call.</p>
+</div><h5 id="methods_loadbypost_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>config</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadbypost-page"><p>Takes input as query configuration.</p>
+</div></td></tr><tr><td>sortApplied <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadbypost-page"><p>Takes input to sort data.</p>
+</div> <p><em>(default: undefined)</em></p></td></tr></tbody></table><h5 id="methods_loadbypost_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadbypost-page"><p>Returns properly ordered grid page promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loaddefaultcolumns">loadDefaultColumns(relationshipKey, mergeDefaults)</h3>
+<div class="loaddefaultcolumns"><div class="fortisoar-services-page fortisoar-services-pagedcollection-loaddefaultcolumns-page"><p>Loads default columns.</p>
+</div><h5 id="methods_loaddefaultcolumns_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>relationshipKey <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loaddefaultcolumns-page"><p>Takes input of related field name key.</p>
+</div></td></tr><tr><td>mergeDefaults <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loaddefaultcolumns-page"><p>Input takes a boolean whether to merge defaults with existing.</p>
+</div></td></tr></tbody></table><h5 id="methods_loaddefaultcolumns_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loaddefaultcolumns-page"><p>Returns updated object of default columns.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadgridrecord">loadGridRecord(config, sortApplied, getAllColumns, recordId, associationField, csvNeutralization)</h3>
+<div class="loadgridrecord"><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Loads grid records.</p>
+</div><h5 id="methods_loadgridrecord_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>config <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input as grid configuration.</p>
+</div></td></tr><tr><td>sortApplied <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input to apply sort to record.</p>
+</div></td></tr><tr><td>getAllColumns <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input to load all columns.</p>
+</div></td></tr><tr><td>recordId <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-integer">Integer</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input to load specific record with <code>recordId</code>.</p>
+</div></td></tr><tr><td>associationField <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input to load specific field&#39;s association.</p>
+</div></td></tr><tr><td>csvNeutralization <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Takes input to load neutralized CSV data.</p>
+</div> <p><em>(default: undefined)</em></p></td></tr></tbody></table><h5 id="methods_loadgridrecord_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-loadgridrecord-page"><p>Returns properly ordered grid page promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_pagefirst">pageFirst(loadByPost)</h3>
+<div class="pagefirst"><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagefirst-page"><p>Navigate to data of first page.</p>
+</div><h5 id="methods_pagefirst_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>loadByPost</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagefirst-page"><p>Calls loadGridRecord method on true, else forms first page URL and calls API to get results.</p>
+</div></td></tr></tbody></table><h5 id="methods_pagefirst_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagefirst-page"><p>Returns first page data as promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_pagelast">pageLast(loadByPost)</h3>
+<div class="pagelast"><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagelast-page"><p>Navigate to data of last page.</p>
+</div><h5 id="methods_pagelast_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>loadByPost</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagelast-page"><p>Calls loadGridRecord method on true, else forms last page URL and calls API to get results.</p>
+</div></td></tr></tbody></table><h5 id="methods_pagelast_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagelast-page"><p>Returns last page data as promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_pagenext">pageNext(loadByPost)</h3>
+<div class="pagenext"><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagenext-page"><p>Navigate to data of next page.</p>
+</div><h5 id="methods_pagenext_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>loadByPost</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagenext-page"><p>Calls loadGridRecord method on true, else forms next page URL and calls API to get results.</p>
+</div></td></tr></tbody></table><h5 id="methods_pagenext_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pagenext-page"><p>Returns next page as promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_pageprevious">pagePrevious(loadByPost)</h3>
+<div class="pageprevious"><div class="fortisoar-services-page fortisoar-services-pagedcollection-pageprevious-page"><p>Navigate to data of previous page.</p>
+</div><h5 id="methods_pageprevious_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>loadByPost</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pageprevious-page"><p>Calls loadGridRecord method on true, else forms previous page URL and calls API to get results.</p>
+</div></td></tr></tbody></table><h5 id="methods_pageprevious_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-pageprevious-page"><p>Returns previous page as promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_setpage">setPage(data)</h3>
+<div class="setpage"><div class="fortisoar-services-page fortisoar-services-pagedcollection-setpage-page"><p>Sets record as per pagination.</p>
+</div><h5 id="methods_setpage_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-setpage-page"><p>Takes input as API result as data.</p>
+</div></td></tr></tbody></table><h5 id="methods_setpage_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-setpage-page"><p>Returns records with pagination.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_sortcolumnsbyfieldname">sortColumnsByFieldName(direction)</h3>
+<div class="sortcolumnsbyfieldname"><div class="fortisoar-services-page fortisoar-services-pagedcollection-sortcolumnsbyfieldname-page"><p>Sorts column by <code>field name</code>.</p>
+</div><h5 id="methods_sortcolumnsbyfieldname_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>direction</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-services-page fortisoar-services-pagedcollection-sortcolumnsbyfieldname-page"><p>Takes input as sorting direction i.e., &#39;desc&#39;.</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>
