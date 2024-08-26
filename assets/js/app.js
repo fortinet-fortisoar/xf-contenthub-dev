@@ -26,7 +26,7 @@ $(document).ready(function () {
   //Top nav bar
   var topbar = $('#topbar-container');
   if (topbar) {
-    topbar.load('assets/html/topbar.html', function() {
+    topbar.load('xf-contenthub-dev/assets/html/topbar.html', function() {
       var themeApplied = localStorageGetSetItem('get', 'themeApplied');
       themeApplied = themeApplied ? themeApplied : 'Dark Theme';
       setTimeout(function () {
@@ -43,7 +43,7 @@ $(document).ready(function () {
   //Footer
   var footer = $('#footer-container');
   if (footer) {
-    footer.load('assets/html/footer.html');
+    footer.load('xf-contenthub-dev/assets/html/footer.html');
   }
   $('.dropdown-toggle').dropdown();
   $('.nav-tabs').tab();
@@ -68,7 +68,7 @@ function loadSidebar(){
   //Sidebar on listing page
   if (navBar && navBar.length > 0) {
     var xmlHttp = new XMLHttpRequest();
-    navBar.load('assets/html/sidebar.html');
+    navBar.load('xf-contenthub-dev/assets/html/sidebar.html');
 
     //Check headers last modified date
     var contentHubFilterJsonPath = yumRepo + "content-hub/content-hub-filters.json";
@@ -426,7 +426,7 @@ function resetAllCheckboxes(checkboxes){
 function init() {
   var contentHubPath = yumRepo + "content-hub/content-hub-web.json";
   var allItemsJson;
-  $.getJSON('assets/resources.json', function(resourcesJson) {
+  $.getJSON('xf-contenthub-dev/assets/resources.json', function(resourcesJson) {
     var resourcesJson = resourcesJson.resources;
     //Check headers last modified date
     httpGetHeaderInfo(contentHubPath, function(lastModifiedDate) {
@@ -856,7 +856,7 @@ function buildHomePageBanners() {
   var announcementsBanner = $("#carousel-announcement-content");
   var updatesBanner = $("#carousel-product-updates-content");
   var mainBannerIndicator = $("#main-carousel-indicators");
-  var bannersJson = $.getJSON({ 'url': "assets/banners.json", 'async': false });
+  var bannersJson = $.getJSON({ 'url': 'xf-contenthub-dev/assets/banners.json', 'async': false });
   bannersJson = JSON.parse(bannersJson.responseText);
 
   //Announcement banner

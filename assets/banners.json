@@ -39,7 +39,7 @@
     "subHeading": "Artificial Intelligence",
     "description": "FortiSOAR has unveiled its latest release, version 7.4.3, featuring groundbreaking innovations aimed at enhancing user experience and efficiency. One notable introduction is the Fortinet Advisor, currently in its preview version, serving as an AI assistant tailored for FortiSOAR users and compatible with version 7.4.3 and later.",
     "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Announcements/FortiSOAR-v7-4-3-Introducing-Fortinet-Advisor-for-AI-Enhanced/ta-p/289240",
-    "imagePath": "assets/images/product_updates_01.png",
+    "imagePath": "xf-contenthub-dev/assets/images/product_updates_01.png",
     "hyperLinkText": ""
   },
   {
@@ -47,7 +47,7 @@
     "subHeading": "Zero Day Exploit",
     "description": "A new FortiGuard Outbreak Detection Service is now available through FortiSOAR™'s Outbreak Response Framework Solution Pack.",
     "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/FortiSOAR-Outbreak-Response-Framework-Overview/td-p/285701",
-    "imagePath": "assets/images/product_updates_02.png",
+    "imagePath": "xf-contenthub-dev/assets/images/product_updates_02.png",
     "hyperLinkText": ""
   },
   {
@@ -55,7 +55,7 @@
     "subHeading": "Facilitating Community Submission",
     "description": "We are delighted to introduce FortiSOAR Rapid Development Kit (RDK) Version 2.0.0, bringing a myriad of user-centric enhancements to empower your journey in creating seamless third-party integrations and utility code snippets for FortiSOAR.",
     "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/FortiSOAR-Rapid-Development-Kit-v2-0-0-Release-Announcement/td-p/291179",
-    "imagePath": "assets/images/product_updates_03.png",
+    "imagePath": "xf-contenthub-dev/assets/images/product_updates_03.png",
     "hyperLinkText": ""
   },
   {
@@ -63,7 +63,7 @@
     "subHeading": "Compliance",
     "description": "The GDPR Framework solution pack serves as a valuable resource for organizations striving to comply with the General Data Protection Regulation (GDPR) guidelines.",
     "hyperLink": "https://community.fortinet.com/t5/FortiSOAR-Discussions/GDPR-Article-33-Notification-with-FortiSOAR-GDPR-Framework/td-p/275728",
-    "imagePath": "assets/images/product_updates_04.png",
+    "imagePath": "xf-contenthub-dev/assets/images/product_updates_04.png",
     "hyperLinkText": ""
   }],
  "announcementBanner": [{
