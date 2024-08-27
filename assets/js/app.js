@@ -19,6 +19,7 @@ var paramSortBy = getUrlParameter('sortBy');
 var paramFilterBy = getUrlParameter('filterBy');
 var categoryList = [];
 var publisherList = [];
+var solutionsTypes = ['connectors', 'solutionpacks', 'widgets'];
 var contentTypeList = [{ 'name': 'Connectors', 'value': 'connector' }, { 'name': 'Solution Packs', 'value': 'solutionpack' }, { 'name': 'Widgets', 'value': 'widget' }, { 'name': 'Resources', 'value': 'resources' }];
 var contentSubTypeList = [{ 'name': 'FortiSOAR Kit', 'value': 'datasheet'}, {'name': 'Demo Videos', 'value': 'demovideos'}, {'name': 'Product How To\'s', 'value': 'howtos'}];
 var totalItems = 0;
@@ -425,38 +426,40 @@ function resetAllCheckboxes(checkboxes){
 }
 
 function init() {
-  var contentHubPath = yumRepo + "solutions/connectors/manifest.json";
+  var contentHubPath = yumRepo + "solutions/";
   var allItemsJson;
   $.getJSON('xf-contenthub-dev/assets/resources.json', function(resourcesJson) {
     var resourcesJson = resourcesJson.resources;
     //Check headers last modified date
-    httpGetHeaderInfo(contentHubPath, function(lastModifiedDate) {
-      console.log(lastModifiedDate);
-      if (!localStorage.hasOwnProperty('allItemsJsonlastModifiedDate')) {
-        localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
-      }
-      var allItemsJsonlastModifiedDate = localStorageGetSetItem('get', 'allItemsJsonlastModifiedDate');
-      
-      if(localStorage.hasOwnProperty('allItemsJson')) {
-        allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
-        allItemsJson = JSON.parse(allItemsJson);
-      }
-      
-      if(allItemsJsonlastModifiedDate === lastModifiedDate && allItemsJson && allItemsJson.length > 0){
-        allItemsJson = allItemsJson.concat(resourcesJson);
-        updateContentOnPageLoad(allItemsJson);
-      } else {
-        localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
-        var httpLoadContent = new XMLHttpRequest();
-        httpLoadContent.open("GET", contentHubPath, false); // false for synchronous request
-        httpLoadContent.send(null);
-        var allItemsJsonResponse = httpLoadContent.responseText;
-        localStorageGetSetItem('set', 'allItemsJson', allItemsJsonResponse);
-        allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
-        allItemsJson = JSON.parse(allItemsJson);
-        allItemsJson = allItemsJson.concat(resourcesJson);
-        updateContentOnPageLoad(allItemsJson);
-      }
+    solutionsTypes.forEach((solution) => {
+      httpGetHeaderInfo(contentHubPath + solution + '/manifest.json', function(lastModifiedDate) {
+        console.log(lastModifiedDate);
+        if (!localStorage.hasOwnProperty('allItemsJsonlastModifiedDate')) {
+          localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
+        }
+        var allItemsJsonlastModifiedDate = localStorageGetSetItem('get', 'allItemsJsonlastModifiedDate');
+        
+        if(localStorage.hasOwnProperty('allItemsJson')) {
+          allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
+          allItemsJson = JSON.parse(allItemsJson);
+        }
+        
+        if(allItemsJsonlastModifiedDate === lastModifiedDate && allItemsJson && allItemsJson.length > 0){
+          allItemsJson = allItemsJson.concat(resourcesJson);
+          updateContentOnPageLoad(allItemsJson);
+        } else {
+          localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
+          var httpLoadContent = new XMLHttpRequest();
+          httpLoadContent.open("GET", contentHubPath, false); // false for synchronous request
+          httpLoadContent.send(null);
+          var allItemsJsonResponse = httpLoadContent.responseText;
+          localStorageGetSetItem('set', 'allItemsJson', allItemsJsonResponse);
+          allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
+          allItemsJson = JSON.parse(allItemsJson);
+          allItemsJson = allItemsJson.concat(resourcesJson);
+          updateContentOnPageLoad(allItemsJson);
+        }
+      });
     });
   });
 }
