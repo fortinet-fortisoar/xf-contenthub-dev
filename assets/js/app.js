@@ -72,7 +72,7 @@ function loadSidebar(){
     navBar.load('xf-contenthub-dev/assets/html/sidebar.html');
 
     //Check headers last modified date
-    var contentHubFilterJsonPath = yumRepo + "content-hub/content-hub-filters.json";
+    var contentHubFilterJsonPath = yumRepo + "solutions/connector/manifest.json";
     var allFiltersJson = localStorageGetSetItem('get', 'allFiltersJson');
     httpGetHeaderInfo(contentHubFilterJsonPath, function(lastModifiedDate) {
       console.log(lastModifiedDate);
