@@ -425,7 +425,7 @@ function resetAllCheckboxes(checkboxes){
 }
 
 function init() {
-  var contentHubPath = yumRepo + "content-hub/content-hub-web.json";
+  var contentHubPath = yumRepo + "solutions/connectors/manifest.json";
   var allItemsJson;
   $.getJSON('xf-contenthub-dev/assets/resources.json', function(resourcesJson) {
     var resourcesJson = resourcesJson.resources;
