@@ -16,12 +16,12 @@
     detailBuildNumber = detailBuildNumber ? detailBuildNumber : 'latest';
     var infoPath = "/content-hub/" + detailName + "-" + detailVersion + "/" + detailBuildNumber;
     // TODO: xf-update
-    infoPath = 'solutions/' + detailType + '/' + detailName + '-' + detailVersion + '/' + detailBuildNumber;
+    infoPath = 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/' + detailBuildNumber;
     var detailPath = yumRepo + infoPath + '/info.json';
     var mdFilepath = yumRepo + infoPath + '/release_notes.md';
     var depsPath = yumRepo + "/content-hub/" + detailName + "-" + detailVersion + "/deps.json";
     // TODO: xf-update
-    depsPath = yumRepo + 'solutions/' + detailType + '/' + detailName + '-' + detailVersion + '/deps.json';
+    depsPath = yumRepo + 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/deps.json';
 
     httpGetAsync(detailPath, function(response) {
       setTimeout(function () {
