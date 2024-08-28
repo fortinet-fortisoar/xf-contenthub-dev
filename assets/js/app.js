@@ -73,7 +73,7 @@ function loadSidebar(){
     navBar.load('xf-contenthub-dev/assets/html/sidebar.html');
 
     //Check headers last modified date
-    var contentHubFilterJsonPath = yumRepo + "solutions/connector/manifest.json";
+    var contentHubFilterJsonPath = yumRepo + "solutions/content-hub-filters.json";
     var allFiltersJson = localStorageGetSetItem('get', 'allFiltersJson');
     httpGetHeaderInfo(contentHubFilterJsonPath, function(lastModifiedDate) {
       console.log(lastModifiedDate);
@@ -426,40 +426,38 @@ function resetAllCheckboxes(checkboxes){
 }
 
 function init() {
-  var contentHubPath = yumRepo + "solutions/";
+  var contentHubPath = yumRepo + "solutions/content-hub-web.json";
   var allItemsJson;
   $.getJSON('xf-contenthub-dev/assets/resources.json', function(resourcesJson) {
     var resourcesJson = resourcesJson.resources;
     //Check headers last modified date
-    solutionsTypes.forEach((solution) => {
-      httpGetHeaderInfo(contentHubPath + solution + '/manifest.json', function(lastModifiedDate) {
-        console.log(lastModifiedDate);
-        if (!localStorage.hasOwnProperty('allItemsJsonlastModifiedDate')) {
-          localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
-        }
-        var allItemsJsonlastModifiedDate = localStorageGetSetItem('get', 'allItemsJsonlastModifiedDate');
-        
-        if(localStorage.hasOwnProperty('allItemsJson')) {
-          allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
-          allItemsJson = JSON.parse(allItemsJson);
-        }
-        
-        if(allItemsJsonlastModifiedDate === lastModifiedDate && allItemsJson && allItemsJson.length > 0){
-          allItemsJson = allItemsJson.concat(resourcesJson);
-          updateContentOnPageLoad(allItemsJson);
-        } else {
-          localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
-          var httpLoadContent = new XMLHttpRequest();
-          httpLoadContent.open("GET", contentHubPath, false); // false for synchronous request
-          httpLoadContent.send(null);
-          var allItemsJsonResponse = httpLoadContent.responseText;
-          localStorageGetSetItem('set', 'allItemsJson', allItemsJsonResponse);
-          allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
-          allItemsJson = JSON.parse(allItemsJson);
-          allItemsJson = allItemsJson.concat(resourcesJson);
-          updateContentOnPageLoad(allItemsJson);
-        }
-      });
+    httpGetHeaderInfo(contentHubPath, function(lastModifiedDate) {
+      console.log(lastModifiedDate);
+      if (!localStorage.hasOwnProperty('allItemsJsonlastModifiedDate')) {
+        localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
+      }
+      var allItemsJsonlastModifiedDate = localStorageGetSetItem('get', 'allItemsJsonlastModifiedDate');
+      
+      if(localStorage.hasOwnProperty('allItemsJson')) {
+        allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
+        allItemsJson = JSON.parse(allItemsJson);
+      }
+      
+      if(allItemsJsonlastModifiedDate === lastModifiedDate && allItemsJson && allItemsJson.length > 0){
+        allItemsJson = allItemsJson.concat(resourcesJson);
+        updateContentOnPageLoad(allItemsJson);
+      } else {
+        localStorageGetSetItem('set', 'allItemsJsonlastModifiedDate', lastModifiedDate);
+        var httpLoadContent = new XMLHttpRequest();
+        httpLoadContent.open("GET", contentHubPath, false); // false for synchronous request
+        httpLoadContent.send(null);
+        var allItemsJsonResponse = httpLoadContent.responseText;
+        localStorageGetSetItem('set', 'allItemsJson', allItemsJsonResponse);
+        allItemsJson = localStorageGetSetItem('get', 'allItemsJson');
+        allItemsJson = JSON.parse(allItemsJson);
+        allItemsJson = allItemsJson.concat(resourcesJson);
+        updateContentOnPageLoad(allItemsJson);
+      }
     });
   });
 }
