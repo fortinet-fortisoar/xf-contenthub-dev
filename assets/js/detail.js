@@ -15,14 +15,10 @@ function init() {
   var detailVersion = getUrlParameter('version');
   var detailBuildNumber = getUrlParameter('buildNumber');
   detailBuildNumber = detailBuildNumber ? detailBuildNumber : 'latest';
-  var infoPath = "/content-hub/" + detailName + "-" + detailVersion + "/" + detailBuildNumber;
-  // TODO: xf-update
-  infoPath = 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/' + detailBuildNumber;
+  var infoPath = 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/' + detailBuildNumber;
   var detailPath = yumRepoXF + infoPath + '/info.json';
   var mdFilepath = yumRepoXF + infoPath + '/release_notes.md';
-  var depsPath = yumRepoXF + "/content-hub/" + detailName + "-" + detailVersion + "/deps.json";
-  // TODO: xf-update
-  depsPath = yumRepoXF + 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/deps.json';
+  var depsPath = yumRepoXF + 'solutions/' + detailType + 's/' + detailName + '-' + detailVersion + '/deps.json';
 
   httpGetAsync(detailPath, function(response) {
     setTimeout(function () {
