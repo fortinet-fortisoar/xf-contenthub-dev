@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base target="_blank">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <title>FortiSOAR Content Hub</title>
+    <link rel="shortcut icon" type="image/x-icon" href="/assets/images/favicon.ico" />
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/icon_font/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-54P2HBP');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-06T2B933EX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-06T2B933EX');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54P2HBP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="topbar-container">
+                    <div class="custom-left-offset-1 custom-right-offset-1">
+                        <a href="/" class="text-decoration-none pull-left" target="_self">
+                            <h1 class="fw-normal mb-0">Forti<span class="fw-bold">SOAR</span> <span class="fw-lighter m-xxl-2">Content Hub</span></h1>
+                        </a>
+                    </div>
+                </div>
+                <div class="top-breadcrumb">
+                    <div class="custom-left-offset-1 custom-right-offset-1 mt-1">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb mb-2">
+                                <li class="breadcrumb-item fw-light muted" aria-current="page"><a href="/" class="text-decoration-none text-black-50" title="Home" target="_self"><i class="fa fa-home"></i></a></li>
+                                <li class="breadcrumb-item fw-light muted" aria-current="page"><a onclick="navigateToContent()" class="border-0 btn btn-link btn-sm p-0 pull-left text-black-50 text-decoration-none" target="_self">Content</a></li>
+                                <li class="breadcrumb-item fw-normal active" aria-current="page"><span id="detail-current-breadcrumb"></span></li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="main col-md-12 item-detail-column">
+                <div class="page-loading details-loader">
+                    <div class="center">
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                      <div class="wave"></div>
+                    </div>
+                </div>
+                <div class="custom-left-offset-1 custom-right-offset-1 item-detail-content d-none">
+                    <div class="dropdown show dropdown-version-content pull-left">
+                        <a class="btn btn-sm btn-secondary dropdown-toggle" role="button" id="dropdownVersionLink"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a>
+                        <div class="dropdown-menu d-none" aria-labelledby="dropdownVersionLink" id="detail-available-versions">
+                        </div>
+                    </div>
+                    <div class="pull-left item-github-content d-none">
+                        <div class="detail-properties mb-0">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="display-inline-block" id="detail-github-link"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="col-md-12">
+                        <div class="detail-content">
+                            <div class="detail-container">
+                                <div class="row">
+                                    <div class="col-md-12 col-sm-12">
+                                        <div class="detail-summary">
+                                            <div class="pull-left" id="detail-img-container">
+                                            </div>
+                                            <div class="pull-left ms-3 mt-1">
+                                                <h2 id="detail-heading"></h2>
+                                                <p class="detail-properties mb-0">
+                                                    <span class="grey-text">Version: </span>
+                                                    <span id="detail-version"></span>
+                                                </p>
+                                                <p class="detail-properties mb-0"><span class="grey-text">Certified:
+                                                    </span><span id="detail-certified"></span></p>
+                                                <p class="detail-properties detail-publisher-properties"><span class="grey-text">Publisher:
+                                                    </span><span id="detail-publisher"></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                                <div class="row detail-container-bottom mt-4 d-none" id="detail-tags-container">
+                                    <div class="col-md-12">
+                                        <p class="fw-light">Tags:</p>
+                                        <div class="grey-text detail-properties detail-description"
+                                            id="detail-tags"></div>
+                                    </div>
+                                </div>
+                                <div class="row detail-container-bottom">
+                                    <div class="col-md-12">
+                                        <div class="grey-text detail-properties detail-description"
+                                            id="detail-description"></div>
+                                    </div>
+                                </div>
+                                <div class="row detail-container-bottom d-none" id="release-notes-block">
+                                    <div class="col-md-12">
+                                        <strong class="d-block fs-4 mt-3">Release
+                                            Notes</strong>
+                                        <div class="grey-text detail-properties detail-description"
+                                            id="detail-release-notes"></div>
+                                    </div>
+                                </div>
+                                <div class="row detail-container-bottom d-none mb-5" id="doc-content-block">
+                                    <div class="col-md-12">
+                                        <strong class="d-block fs-4 mt-3">Documents</strong>
+                                        <div class="grey-text detail-properties detail-description pb-5"
+                                            id="detail-docs-content"></div>
+                                    </div>
+                                </div>
+                                <div class="row detail-container-bottom d-none mb-5" id="detail-doc-link">
+                                    <div class="col-md-12">
+                                        <strong
+                                            class="d-block fs-4 mt-3">Documentation</strong>
+                                        <p class="grey-text detail-properties detail-description pb-5">View the document
+                                            <span id="detail-doc-link-here"></span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container" id="footer-container"></div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script>
+    <script src="assets/js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@webcomponents/webcomponentsjs@2/webcomponents-loader.min.js"></script>
+    <script type="module" src="https://cdn.jsdelivr.net/gh/zerodevx/zero-md@1/src/zero-md.min.js"></script>
+    <script src="assets/js/detail.js"></script>
+</body>
+
+</html>

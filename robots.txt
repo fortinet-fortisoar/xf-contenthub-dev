@@ -1,0 +1,9 @@
+# Dont Block Googlebot
+User-agent: Googlebot
+Allow: /
+
+# Block Adsbot
+User-agent: AdsBot-Google
+Disallow: /
+
+Sitemap: http://marketplace.cybersponse.com/detail.html

@@ -1,0 +1,61 @@
+{"mainBanner": [{
+    "heading": "Discover Curated Solutions",
+    "subHeading": "FortiSOAR Content Hub is a collection of solution extensions that help you to derive more meaning from your FortiSOAR application",
+    "description": "",
+    "hyperLink": "/list.html?contentType=all",
+    "imagePath": "assets/images/main_banner_1.png",
+    "hyperLinkText": "Explore Content Hub",
+    "backgroundColorType": "dark"
+  },
+  {
+    "heading": "Featured - SOAR Framework Pack",
+    "subHeading": "A well-researched and community vetted solution pack to streamline and accelerate your SOAR journey.",
+    "description": "",
+    "hyperLink": "/detail.html?entity=sOARFramework&version=1.0.0&type=solutionpack",
+    "imagePath": "assets/images/main_banner_2.png",
+    "hyperLinkText": "Explore SOAR Framework Pack",
+    "backgroundColorType": "dark"
+  },
+  {
+    "heading": "Featured - Threat Intelligence Management Solution Pack",
+    "subHeading": "Allows you to imbibe and adapt to threat intel management workflows and best practices and build a threat intel fused incident investigation process",
+    "description": "",
+    "hyperLink": "/detail.html?entity=threat-intel-management&version=1.0.0&type=solutionpack",
+    "imagePath": "assets/images/main_banner_3.png",
+    "hyperLinkText": "Explore Threat Intel Management Pack",
+    "backgroundColorType": "dark"
+  },
+  {
+    "heading": "Gartner Peer Insights Reviews",
+    "subHeading": "Many enterprise customers realize the power and effectiveness of FortiSOAR and have provided positive feedback on Gartner Peer Insights.",
+    "description": "",
+    "hyperLink": "https://www.gartner.com/reviews/market/security-orchestration-automation-and-response-solutions/vendor/fortinet/product/fortisoar",
+    "imagePath": "assets/images/main_banner.png",
+    "hyperLinkText": "View Reviews",
+    "backgroundColorType": "light"
+  }],
+"updatesBanner": [{
+    "heading": "FortiSOAR Solution Highlights",
+    "subHeading": "FortiSOAR helps to streamline your SOC and empowering it to orchestrate and automate accelerated and informed threat responses.",
+    "description": "",
+    "hyperLink": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortisoar.pdf",
+    "imagePath": "assets/images/updates_banner_1.png",
+    "hyperLinkText": "View Data Sheet"
+  },
+  {
+    "heading": "FortiSOAR Community - Technical Help and FAQs",
+    "subHeading": "Well curated and updated technical help and FAQs available for your reference.",
+    "description": "",
+    "hyperLink": "https://community.fortinet.com/t5/forums/searchpage/tab/message?searchString=fortisoar&from=0&sortby=post_time&orderBy=desc&pageNo=1&aggregations=%5B%5D&uid=8021d0dd-1517-11ec-b3e2-0242ac12000d&resultsPerPage=10&exactPhrase=&withOneOrMore=&withoutTheWords=&pageSize=10&language=en&state=2&suCaseCreate=false",
+    "imagePath": "assets/images/updates_banner_3.png",
+    "hyperLinkText": "Explore FAQs"
+  },
+  {
+    "heading": "FortiSOAR Community – Forums, Updates and Interactions",
+    "subHeading": "Participate in community discussions, request a feature, tune in to product updates and much more",
+    "description": "",
+    "hyperLink": "https://fusecommunity.fortinet.com/groups/community-home?CommunityKey=9f1420e8-e3c6-4535-8cae-3fa714da66d8",
+    "imagePath": "assets/images/updates_banner_2.png",
+    "hyperLinkText": "Explore Community"
+  }]
+}
