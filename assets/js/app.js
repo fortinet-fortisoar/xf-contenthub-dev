@@ -42,7 +42,7 @@ $(document).ready(function () {
   if (footer) {
     footer.load('xf-contenthub-dev/assets/html/footer.html', function(response, status, xhr) {
       if (status == 'error') {
-        footer.load('xf-contenthub-dev/assets/html/footer.html');
+        footer.load('assets/html/footer.html');
       }
     });
   }
