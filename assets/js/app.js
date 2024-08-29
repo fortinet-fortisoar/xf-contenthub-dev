@@ -2,7 +2,8 @@
 
 const http = new XMLHttpRequest();
 
-var yumRepo = 'https://repo.fortisoar.fortinet.com/xf/';
+var yumRepo = 'https://repo.fortisoar.fortinet.com/';
+var yumRepoXF = 'https://repo.fortisoar.fortinet.com/xf/';
 // var basePath = 'https://fortisoar.contenthub.fortinet.com/';
 var basePath = 'https://fortinet-fortisoar.github.io/xf-contenthub-dev/';
 var listItems = [];
@@ -73,7 +74,7 @@ function loadSidebar(){
     navBar.load('xf-contenthub-dev/assets/html/sidebar.html');
 
     //Check headers last modified date
-    var contentHubFilterJsonPath = yumRepo + "solutions/content-hub-filters.json";
+    var contentHubFilterJsonPath = yumRepoXF + "solutions/content-hub-filters.json";
     var allFiltersJson = localStorageGetSetItem('get', 'allFiltersJson');
     httpGetHeaderInfo(contentHubFilterJsonPath, function(lastModifiedDate) {
       console.log(lastModifiedDate);
@@ -426,7 +427,7 @@ function resetAllCheckboxes(checkboxes){
 }
 
 function init() {
-  var contentHubPath = yumRepo + "solutions/content-hub-web.json";
+  var contentHubPath = yumRepoXF + "solutions/content-hub-web.json";
   var allItemsJson;
   $.getJSON('xf-contenthub-dev/assets/resources.json', function(resourcesJson) {
     var resourcesJson = resourcesJson.resources;
