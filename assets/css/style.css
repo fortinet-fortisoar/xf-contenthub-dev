@@ -1345,7 +1345,11 @@
 }
 
 .light-theme-applied .detail-container .markdown-body pre {
-  background-color: #00a3ff;
+  background-color: #f6f8fa;
+}
+
+.detail-container .markdown-body pre {
+  background-color: #161b22;
 }
 
 .light-theme-applied .detail-container .content-box-styling {
