@@ -1,0 +1,44 @@
+<h1><code ng:non-bindable="">picklistsService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-picklistsservice-page"><p>The <code>picklistsService</code> will facilitate performing actions in regards gathering
+and manipulating picklists.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getpicklistbyiri">getPicklistByIri(iri)</h3>
+<div class="getpicklistbyiri"><div class="fortisoar-picklistsservice-getpicklistbyiri-page"><p>This returns a top-level picklist item with its child picklists,
+or the child picklist itself, based on the given IRI.</p>
+</div><h5 id="methods_getpicklistbyiri_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>iri</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-picklistsservice-getpicklistbyiri-page"><p>The IRI of the picklist to find. For example: <code>/api/3/picklist_names/c2e3bcad-778d-41dd-91e8-0596b8c5716f</code></p>
+</div></td></tr></tbody></table><h5 id="methods_getpicklistbyiri_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-picklistsservice-getpicklistbyiri-page"><p>A promise that will be resolved with the picklist object
+once found, or rejected if not found.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getpicklistbyitemvalue">getPicklistByItemValue(field, itemValue)</h3>
+<div class="getpicklistbyitemvalue"><div class="fortisoar-picklistsservice-getpicklistbyitemvalue-page"><p>Gets a picklist for a given field and the known itemValue.</p>
+</div><h5 id="methods_getpicklistbyitemvalue_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>field</td><td><a href="" class="label type-hint type-hint-field">Field</a></td><td><div class="fortisoar-picklistsservice-getpicklistbyitemvalue-page"><p>The field object that has picklists.</p>
+</div></td></tr><tr><td>itemValue</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-picklistsservice-getpicklistbyitemvalue-page"><p>The itemValue property of the picklist to be found.</p>
+</div></td></tr></tbody></table><h5 id="methods_getpicklistbyitemvalue_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-picklistsservice-getpicklistbyitemvalue-page"><p>A promise that will be resolved with the picklist once found,
+or rejected if not found.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadallpicklists">loadAllPicklists(useExport)</h3>
+<div class="loadallpicklists"><div class="fortisoar-picklistsservice-loadallpicklists-page"><p>This function returns all picklist values.</p>
+</div><h5 id="methods_loadallpicklists_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>useExport <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-picklistsservice-loadallpicklists-page"><p>$export flag to be passed as a part of query parameters while fetching picklist data.</p>
+</div></td></tr></tbody></table><h5 id="methods_loadallpicklists_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-picklistsservice-loadallpicklists-page"><p>A promise that will be resolved with the picklist values.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadpicklistsbyparams">loadPicklistsByParams(itemVal, itemKey)</h3>
+<div class="loadpicklistsbyparams"><div class="fortisoar-picklistsservice-loadpicklistsbyparams-page"><p>This returns a top-level picklist item with its child picklists,
+or the child picklist itself, based on the given IRI.</p>
+</div><h5 id="methods_loadpicklistsbyparams_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>itemVal</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-picklistsservice-loadpicklistsbyparams-page"><p>The IRI of the picklist to find. For example: <code>/api/3/picklist_names/c2e3bcad-778d-41dd-91e8-0596b8c5716f</code></p>
+</div></td></tr><tr><td>itemKey</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-picklistsservice-loadpicklistsbyparams-page"><p>The key of the picklist to find. For example: <code>name</code></p>
+</div></td></tr></tbody></table><h5 id="methods_loadpicklistsbyparams_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-picklistsservice-loadpicklistsbyparams-page"><p>A promise that will be resolved with the picklist object
+once found, or rejected if not found.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <base href="/">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Fortinet FortiSOAR Content Hub" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="robots" content="index, follow" />
+    <title>FortiSOAR Content Hub</title>
+    <link rel="canonical" href="https://fortisoar.contenthub.fortinet.com/">
+    <link rel="shortcut icon" type="image/x-icon" href="xf-contenthub-dev/assets/images/favicon.ico" />
+    <!-- CSS only -->
+    <link rel="stylesheet" type="text/css" href="xf-contenthub-dev/assets/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="xf-contenthub-dev/assets/css/icon_font/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-54P2HBP');</script>
+    <!-- End Google Tag Manager -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-06T2B933EX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-06T2B933EX');
+    </script>
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-54P2HBP" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <div class="wrapper" id="main-content-wrapper">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="topbar-container background-color-secondary" id="topbar-container">
+                </div>
+            </div>
+        </div>
+        <div class="row me-0">
+            <div class="col-md-12">
+                <div class="main main-carousel-container">
+                    <div class="page-loading main-loader">
+                        <div class="center background-color-primary">
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                            <div class="wave"></div>
+                        </div>
+                    </div>
+                    <div class="main-page-content d-none">
+                        <div class="main-banner-container">
+                            <div id="product-announcement-slider" class="d-none">
+                                <div id="carouselAnnoucements" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner" id="carousel-announcement-content"></div>
+                                </div>
+                            </div>
+                            <div class="global-search-input main-page-search-bar">
+                                <input class="form-control" type="text" id="searchText" name="searchText" placeholder="What do you want to explore today?" onChange="submitSearch(this)" onEnter="submitSearch(this)"/>
+                                <i class="fa fa-search searchIcon"></i>
+                            </div>
+                            <div class="main-page-search-bar-content-type">
+                                <div class="alert alert-warning custom-search-alert fade" role="alert">
+                                    Minimum 3 characters are required for search.
+                                    <button type="button" class="bg-transparent border-0 btn close shadow-none text-danger" data-dismiss="alert"
+                                        onclick="dismissSearchAlertBox()" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <main class="content m-0">
+                            <div class="container">
+                                <div class="position-relative">
+                                    <div id="carouselMain" class="carousel slide main-carousel-content" data-bs-ride="carousel">
+                                        <div class="carousel-indicators" id="main-carousel-indicators"></div>
+                                        <div class="carousel-inner" id="main-carousel-content"></div>
+                                    </div>
+                                </div>
+                                <div class="latest-updates-suggestions-container overflow-hidden">
+                                    <div class="latest-updates-suggestions-content position-relative">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="m-b4 text-light"><em class="fw-light">Featured</em> Solution Pack Updates</h4>
+                                                <div id="carouselFeaturedUpdates" class="carousel slide h-100" data-bs-ride="carousel">
+                                                    <div class="bottom-0 carousel-indicators mx-xl-0" id="featured-updates-carousel-indicators"></div>
+                                                    <div class="position-relative mb-3">
+                                                        <div id="featured-hub-updates" class="row"></div>
+                                                        <a class="carousel-control-prev text-decoration-none justify-content-start" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        </a>
+                                                        <a class="carousel-control-next text-decoration-none justify-content-end" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="how-tos-container" class="mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="mb-4 text-light"><em class="fw-light">Featured</em> How To's Videos</h4>
+                                            <div class="how-tos-content position-relative mb-5">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLDA69vHJcNaER-HZWT3pNQ3E7BjUDNm8j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="latest-updates-suggestions-container overflow-hidden mt-5">
+                                    <div class="latest-updates-suggestions-content position-relative">
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <h4 class="m-b4 text-light"><em class="fw-light">Latest</em> Updates</h4>
+                                                <div id="carouselUpdates" class="carousel slide h-100" data-bs-ride="carousel">
+                                                    <div class="bottom-0 carousel-indicators mx-xl-0" id="latest-updates-carousel-indicators"></div>
+                                                    <div class="position-relative mb-3">
+                                                        <div id="latest-hub-updates" class="row"></div>
+                                                        <a class="carousel-control-prev text-decoration-none justify-content-start" role="button" data-slide="prev">
+                                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                                        </a>
+                                                        <a class="carousel-control-next text-decoration-none justify-content-end" role="button" data-slide="next">
+                                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="product-updates-slider" class="mt-5">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4 class="m-b4 text-light"><em class="fw-light">Product</em> Updates</h4>
+                                            <div id="carouselProductUpdates" class="carousel slide" data-bs-ride="carousel">
+                                                <div class="bottom-0 carousel-indicators mx-0" id="product-carousel-indicators"></div>
+                                                <div class="carousel-inner" id="carousel-product-updates-content"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="build-it-yourself-container background-color-secondary">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <h3 class="fw-normal text-light mt-5">Did you find what you exactly want?</h3>
+                                            <h1 class="fst-italic fw-light custom-text-info-color">Build it yourself easily!</h1>
+                                            <h5 class="fw-lighter text-light m-0 mb-1">FortiSOAR has built-in guided wizards
+                                                aimed to help you in quickly building your custom solution pack, integrations,
+                                                widgets etc. </br>from scratch or upon an existing solution as a foundation.
+                                            </h5>
+                                            <br /><a class="btn custom-btn-bg mb-5"
+                                                href="https://github.com/fortinet-fortisoar/how-tos" title="Open Github Page"
+                                                target="_blank">Visit our GitHub page for more details</a>
+                                        </div>
+                                        <div class="col-md-5">
+                                            <div class="build-it-yourself-icon"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+                    <footer>
+                        <div class="footer-container" id="footer-container"></div>
+                    </footer>
+                    <div class="modal fade" id="videoPopupModal" tabindex="-1" aria-labelledby="videoPopupModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="videoPopupModalLabel"></h5>
+                                    <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"
+                                        onclick="closeVideoPopup()"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="position-relative">
+                                        <iframe class="embed-responsive-item" src="" id="videoLink" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen width="765" height="400"></iframe>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal"
+                                        onclick="closeVideoPopup()">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/underscore@1.13.2/underscore-umd-min.js"></script>
+    <script src="xf-contenthub-dev/assets/js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<h1><code ng:non-bindable="">exportService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-exportservice-page"><p>The <code>exportService</code> handles copying, exporting, and downloading playbooks</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_changeplaybookandstepsuuid">changePlaybookAndStepsUuid(playbook, uuidPlaybookMap, replaceAllUuids, collectionClone, existingOutsideCollection)</h3>
+<div class="changeplaybookandstepsuuid"><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>Change the existing playbook UUID with new UUID while exporting the playbook.</p>
+</div><h5 id="methods_changeplaybookandstepsuuid_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>playbook</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>Playbook object to export.</p>
+</div></td></tr><tr><td>uuidPlaybookMap</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>Empty object to add playbook UUID.</p>
+</div></td></tr><tr><td>replaceAllUuids</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>If true, then replace the existing UUID with new UUID.</p>
+</div></td></tr><tr><td>collectionClone</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>If true, then delete playbook version based on the input.</p>
+</div></td></tr><tr><td>existingOutsideCollection</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-exportservice-changeplaybookandstepsuuid-page"><p>If true, then replace the existing UUID with new UUID.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_copyentities">copyEntities(entities, entityName, userParams)</h3>
+<div class="copyentities"><div class="fortisoar-exportservice-copyentities-page"><p>Copies &#39;entities&#39; of type &#39;entityName&#39; (workflows) and returns the result.
+&#39;workflows&#39; require the associated steps and routes to be copied, and 
+workflows need their UUIDs updated.</p>
+</div><h5 id="methods_copyentities_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>entities</td><td><a href="" class="label type-hint type-hint-array">array</a></td><td><div class="fortisoar-exportservice-copyentities-page"><p>An array of entity objects to copy.</p>
+</div></td></tr><tr><td>entityName</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-exportservice-copyentities-page"><p>The name of the entity (workflow).</p>
+</div></td></tr><tr><td>userParams <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="fortisoar-exportservice-copyentities-page"><p>If set to true, will change the playbook name to make it unique.</p>
+</div></td></tr></tbody></table><h5 id="methods_copyentities_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">array</a></td><td><div class="fortisoar-exportservice-copyentities-page"><p>Array of copied entity objects.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_downloadjsonfile">downloadJsonFile(data, fileName)</h3>
+<div class="downloadjsonfile"><div class="fortisoar-exportservice-downloadjsonfile-page"><p>Forces download of a JSON file with given data object and fileName.</p>
+</div><h5 id="methods_downloadjsonfile_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>data</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-downloadjsonfile-page"><p>The object that will be converted to JSON.</p>
+</div></td></tr><tr><td>fileName</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-exportservice-downloadjsonfile-page"><p>The name that the file will be saved with.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_exportgridrecords">exportGridRecords(route, params)</h3>
+<div class="exportgridrecords"><div class="fortisoar-exportservice-exportgridrecords-page"><p>This function will export the selected playbook collection from grid.</p>
+</div><h5 id="methods_exportgridrecords_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>route</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-exportservice-exportgridrecords-page"><p>Action trigger route.</p>
+</div></td></tr><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-exportgridrecords-page"><p>Playbook collection details and record details to export.</p>
+</div></td></tr></tbody></table><h5 id="methods_exportgridrecords_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-exportgridrecords-page"><p>Promise that will resolve with successfully export the record.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getmacrosfromplaybook">getMacrosFromPlaybook(playbook, variables)</h3>
+<div class="getmacrosfromplaybook"><div class="fortisoar-exportservice-getmacrosfromplaybook-page"><p>This function returns the macros from the playbook.</p>
+</div><h5 id="methods_getmacrosfromplaybook_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>playbook</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-getmacrosfromplaybook-page"><p>Playbook object with all steps details.</p>
+</div></td></tr><tr><td>variables</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-exportservice-getmacrosfromplaybook-page"><p>List of variables to compare with macros.</p>
+</div></td></tr></tbody></table><h5 id="methods_getmacrosfromplaybook_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-exportservice-getmacrosfromplaybook-page"><p>List of macros from the playbook steps.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getreferenceplaybookforexport">getReferencePlaybookForExport(playbooks, includeVersions)</h3>
+<div class="getreferenceplaybookforexport"><div class="fortisoar-exportservice-getreferenceplaybookforexport-page"><p>Loads the reference playbook while the exporting playbook.</p>
+</div><h5 id="methods_getreferenceplaybookforexport_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>playbooks</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-getreferenceplaybookforexport-page"><p>Playbook object to export.</p>
+</div></td></tr><tr><td>includeVersions</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-exportservice-getreferenceplaybookforexport-page"><p>Include versions of the playbook while exporting.</p>
+</div></td></tr></tbody></table><h5 id="methods_getreferenceplaybookforexport_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-getreferenceplaybookforexport-page"><p>Promise that will resolve with the exported hydra response</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadcollectionnames">loadCollectionNames()</h3>
+<div class="loadcollectionnames"><div class="fortisoar-exportservice-loadcollectionnames-page"><p>Loads the playbook collection names.</p>
+</div><h5 id="methods_loadcollectionnames_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-loadcollectionnames-page"><p>Promise object that on success will populate the collection names.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadcollectionplaybooks">loadCollectionPlaybooks(collection)</h3>
+<div class="loadcollectionplaybooks"><div class="fortisoar-exportservice-loadcollectionplaybooks-page"><p>Fetch all the playbooks for the provided collection.</p>
+</div><h5 id="methods_loadcollectionplaybooks_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>collection</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-exportservice-loadcollectionplaybooks-page"><p>Object which contains details of the collection like name, uuid, etc.</p>
+</div></td></tr></tbody></table><h5 id="methods_loadcollectionplaybooks_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-loadcollectionplaybooks-page"><p>Promise which provides a list of playbooks for the provided collection on resolve.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadrowsforexport">loadRowsForExport(rows, entityName)</h3>
+<div class="loadrowsforexport"><div class="fortisoar-exportservice-loadrowsforexport-page"><p>Loads exported versions of the given rows from CH.</p>
+</div><h5 id="methods_loadrowsforexport_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>rows</td><td><a href="" class="label type-hint type-hint-array">array</a></td><td><div class="fortisoar-exportservice-loadrowsforexport-page"><p>An array of entity objects to export. Each object must have &#39;@id&#39; key.</p>
+</div></td></tr><tr><td>entityName</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-exportservice-loadrowsforexport-page"><p>The name of the entity (workflow).</p>
+</div></td></tr></tbody></table><h5 id="methods_loadrowsforexport_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-loadrowsforexport-page"><p>Promise that will resolve with the exported hydra response</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_savenewmacrosfromplaybook">saveNewMacrosFromPlaybook(macros)</h3>
+<div class="savenewmacrosfromplaybook"><div class="fortisoar-exportservice-savenewmacrosfromplaybook-page"><p>This function saves the macros in the database.</p>
+</div><h5 id="methods_savenewmacrosfromplaybook_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>macros</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-exportservice-savenewmacrosfromplaybook-page"><p>Array of macros.</p>
+</div></td></tr></tbody></table><h5 id="methods_savenewmacrosfromplaybook_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-exportservice-savenewmacrosfromplaybook-page"><p>Promise that will resolve with successfully save macros.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,674 @@
+{
+  "resources": [
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Learn FortiSOAR Phishing Response Solution in 10 Minutes",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/Ch6yTGiES7I",
+      "label": "Phishing Response Solution Pack",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "A use case demonstration where using FortiSOAR's Notification Channel feature, manual input/decision is requested from a user through MS Teams solution and the input is used to influence the response orchestration workflow. Highlights are the ease of creating Notification Channels and assigning that delivery rules to and the efficient collaboration with external users (non FortiSOAR users) through Email, MS-Teams, Slack etc. mediums.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/5_29UDcBi7I",
+      "label": "External User Collaboration Using MS Teams",
+      "name": "",
+      "publishedDate": 1669108283,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "In this video, we will be walking through how customers can use FortiSOAR to orchestrate their endpoint security. Solutions used in the demo are: FortiSOAR, FortiGate, FortiEDR, VMWare vSphere, Active Directory",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/CzNxDLAMfBQ",
+      "label": "Orchestrating Endpoint Security Using FortiSOAR",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "#FortiSIEM is #Fortinet’s Multivendor Security Incident and Events Management solution. It brings visibility, correlation, automated response, and remediation together into a single, scalable solution. In conjunction with #FortiSOAR, SOC teams can customize an automated framework enabling the optimization of security processes. This video will demonstrate how to improve visibility and response with Fortinet’s #SecurityFabric.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/y0x9s5QiV1I",
+      "label": "Optimizing Efficiency In a SOC Environment Using FortiSIEM and FortiSOAR | Security Operations",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "This demo will demonstrate how customers might use FortiSOAR to orchestrate different components in their environment to block malicious communication.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/7t1mcG_of2w",
+      "label": "FortiSOAR Scenario: Automating Security to Block Malicious Communication with FortiSOAR | SOAR",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "This video illustrates a use case example of an organization that used FortiMonitor to receive alerts before sending the incident to FortiSOAR, thereby ensuring confidence in the integrity of their security infrastructure.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/xouHG11yAho",
+      "label": "NOC-SOC Collaboration with FortiMonitor and FortiSOAR | Security Fabric",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR Demo revolving around a reported phishing email which indicates a larger breach and lateral movement",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/U_yAP1lPm9I",
+      "label": "FortiSOAR Demo: Phishing and Lateral Movement Investigation",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Malware Attack Investigation",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/xejNnGPZ7_c",
+      "label": "FortiSOAR Demo: Malware Attack Investigation",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "In this video, discover how customers can leverage FortiSOAR to help streamline their email security.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/25bQ8s-IWdc",
+      "label": "FortiSOAR Scenario: Streamlining Email Security | SOAR",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiDeceptor & FortiSOAR - Protecting the OT Network",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/QnpIw3LnJeo",
+      "label": "FortiDeceptor & FortiSOAR - Protecting the OT Network",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Part of FortiSOAR simulations, this is a walkthrough Phishing incident management exploring both true positive and false positive cases. This content is meant to help you setup the solution pack in your environment and use it either as a table top exercise or a demo.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/eQ0G_Tgr_4M",
+      "label": "FortiSOAR Solution Pack: Advanced Phishing Incident Management",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR capabilities go beyond SOC, the use case described here is typical for  large organizations having an important turn over with several employees leaving and joining every day. While most access is managed by IAM/SSO several systems (especially legacy ones) still require local configuration to grant access for the new users or disable access for those who left. FortiSOAR Employee On/Off Boarding solution pack helps automating this process by provisioning the access for new employees on the systems they have access to and disabling that access for the ones leaving the organization.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/ytVDEOY432A",
+      "label": "FortiSOAR Solution Pack: Employee Onboarding",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Provide rapid incident response anywhere you go now with FortiSOAR's mobile application. FortiSOAR's mobile application is an easy to use tool that empower analysts to deliver quick responses to alerts and incidents. Analysts can design the mobile application to fit their preferred view. #fortisoar #soar #securityfabric #Fortinet",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/Wo7WuA2MfcI",
+      "label": "Rapid Response with FortiSOAR's Mobile Application | Security Orchestration Automation and Response",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Demo scenario around FortiSOAR record similarity feature",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/fATX4XlTZ1c",
+      "label": "FortiSOAR Demo: Credential theft and data exfiltration",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "2 scenarios of enrichment, triage and a remediation with FortiSOAR",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/knjxV5tisH4",
+      "label": "FortiSOAR Demo: Alert Enrichment Triage and Remediation",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "This covers the Agent installation in a typical enterprise setup. Prerequisites, 4 GB available RAM, CentOS Linux release 7.8.2003 (Kernel - 3.10.0-1127.el7.x86_64) or Red Hat Enterprise Linux Server release 7.7 (Maipo) (Kernel - .10.0-1062.el7), FortiSOAR main setup, External Secure Message Exchange (SME) (Works with the built-in one as well)",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/bIhEni40wI4",
+      "label": "How to Install and Configure FortiSOAR Agent Part 1",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "howtos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR Workshop, incident remediation playbook",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/HQ2TQ8GLJ8s",
+      "label": "FortiSOAR: How to create an incident remediation playbook",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "howtos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR 7.2 introduces a new Threat Intel Management Solution Pack. Any  Threat Intel integration could be used a threat intel feed source as long as the connector used has ingestion capabilities. This video covers the case where there isn't any automated ingestion capability for the connector",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/e4MXYU8-BW4",
+      "label": "FortiSOAR How To: Add Threat Feed Source",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "howtos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "In large deployments we can use an external Secure Message exchange to act as a secure gateway between the remote FortiSOAR instances or FortiSOAR Agents and the Main FortiSOAR instance which is typically located in head office. This video describes the installation and configuration process",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/SetDIc7BrWU",
+      "label": "How to install and configure FortiSOAR Secure Message Exchange",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "howtos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Quick guide to help you configure mTLS for FortiSOAR Secure Message Exchange in an MSSP setup to increase inter-components security posture",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/R3M3j4wefa0",
+      "label": "How to enable mTLS for FortiSOAR Secure Message Exchange",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "howtos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Amplify Security Operations Efforts and Accelerate Response With FortiSOAR",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/content/dam/fortinet/assets/solution-guides/sb-accelerate-with-fortisoar.pdf",
+      "label": "FortiSOAR Solution brief",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-file-pdf-o",
+      "subTypeTitle": "Solution Brief"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR is a holistic Security Orchestration, Automation and Response workbench, designed for SOC teams to efficiently respond to the ever-increasing influx of alerts, repetitive manual processes, and shortage of resources.",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/content/dam/fortinet/assets/data-sheets/fortisoar.pdf",
+      "label": "FortiSOAR Data Sheet",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-file-pdf-o",
+      "subTypeTitle": "Data Sheet"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Open source integrations, solution packs, widgets and samples from FortiSOAR partners, developers, customers and tech enthusiasts.",
+      "iconLarge": null,
+      "infoPath": "https://github.com/fortinet-fortisoar",
+      "label": "FortiSOAR Github",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-github",
+      "subTypeTitle": "GitHub"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Ask questions and join FortiSOAR conversations around popular topics, and find solutions for common issues",
+      "iconLarge": null,
+      "infoPath": "https://fortisoar.fortinet.com",
+      "label": "FortiSOAR Community",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Community"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Access product admin guides, reference manuals, upgrade informartion, security patches and other useful product related information",
+      "iconLarge": null,
+      "infoPath": "https://docs.fortinet.com/product/fortisoar/",
+      "label": "FortiSOAR Product Docs",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Product Docs"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Identify, Verify, Contain: Reducing Cyber Risk in a Year of High-Profile Cyber-Attacks",
+      "iconLarge": null,
+      "infoPath": "https://global.fortinet.com/global-lp-9qvl5?utm_source=website&utm_medium=fortinet&utm_campaign=SecOpsPillar-NAMER-US&utm_content=WC-InfoSecMagIdentifyVerifyContain&source=Website&Lead_Source_Most_Recent=Website",
+      "label": "FortiSOAR Webinar",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Case Study"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Security operations teams face the challenge of maintaining the longevity of their security infrastructures against the evolving threat landscape and operational complexities",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/content/dam/fortinet/assets/ebook/eb-soar-implementation.pdf",
+      "label": "SOAR Through Implementation Ebook",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-file-pdf-o",
+      "subTypeTitle": "Case Study"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "The Security Operations Center (SOC) Automation Model is designed to help security teams identify appropriate Fortinet security products for their SOC, based on their existing investment in people and processes.",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/content/dam/fortinet/assets/ebook/eb-improve-security-operations-across-security-fabric.pdf",
+      "label": "Improve Security Operations Across the Security Fabric",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-file-pdf-o",
+      "subTypeTitle": "Case Study"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Blog about developing and achieving a successful crisis response strategy.",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/blog/business-and-technology/taking-control-during-incident-response-with-fortisoar-7-0",
+      "label": "Taking control with FortiSOAR",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Blog"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Blog - With integrated security capabilities, MSSPs are able to unify customer operations with a centralized security framework.",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/blog/partners/providing-differentiated-managed-service-offerings-with-fortisoar",
+      "label": "Differentiate Managed Service Offerings with FortiSOAR",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Blog"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Case study - Business Soars When MSSP Leverages FortiSOAR for Threat-Alert Case Management",
+      "iconLarge": null,
+      "infoPath": "https://www.fortinet.com/customers/secure-cyber-defense",
+      "label": "MSSP Leverages FortiSOAR for Threat-Alert Case Management",
+      "name": "",
+      "publishedDate": 1655808469,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-link",
+      "subTypeTitle": "Case Study"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "A live demonstration of FortiSOAR's capabilities to ingest, prioritize, remediate and report vulnerabilities in OT/IT environments. In this demo, one can understand, how FortiSOAR ingests the CISA's ICS Advisories, automates the enrichment of CVEs using KEV catalogue (Known Exploitable Vulnerability), does Asset Correlations and raises an Alert if there is match found for Asset and a CVE having a Known Exploit. Further, it leverages the SSVC model for risk scoring of the Vulnerabilities and helps to orchestrate the process, leading to remediation recommendations/actions and Reporting.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/eZekKteZbLE",
+      "label": "Leveraging FortiSOAR For Vulnerability Management in OT/IT",
+      "name": "",
+      "publishedDate": 1679638721,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "A quick 5 min overview of how FortiSOAR adds value in the IT/OT Environments, helping in Risk-based Asset Management with Purdue Level Sensitivity, Orchestrated Alert Management with wide-array correlations and MITRE ATT&CK For ICS Based Response/Containment Recommendations. In addition, it provides out-of-the-box response Playbooks (with 500+ available integrations) to contain threats and allows for comprehensive Vulnerability Management, pulling in ICS Advisories and correlating Assets and KEV (Known Exploitable Vulnerabilities) info for empowering risk-based mitigations.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/-jZk7jmNo-o",
+      "label": "FortiSOAR For IT/OT Environments",
+      "name": "",
+      "publishedDate": 1680176540,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "In this scenario demonstration, we showcase, how a well integrated, out-of-the-box solution between FortiSOAR and FortiAnalyzer helps in responding to threats, efficiently and in-time. A practical use case is shown, where an alert from FAZ is enriched in FortiSOAR using threat intelligence and machine learning inputs. Next, the affected asset is isolated in FortiEMS post an approval received from the SOC admin on Slack. Once the machine is cleaned up, its shown how it can be quickly brought back up. FortiSOAR comprehensively integrates with all the Fortinet Fabric solutions, also allowing you to leverage 500+ other third-party security product integrations to design your response regime effectively and easily.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/etWghPmIuCg",
+      "label": "Using FortiSOAR For Mitigating Threats Detected By FortiAnalyzer",
+      "name": "",
+      "publishedDate": 1681822775,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "FortiSOAR and Azure Integration Brief",
+      "iconLarge": null,
+      "infoPath": "https://repo.fortisoar.fortinet.com/content-hub/integration-brief/fortisoar+azure-integration-brief.pdf",
+      "label": "FortiSOAR Integration Brief",
+      "name": "",
+      "publishedDate": 1689703134,
+      "publisher": "Fortinet",
+      "type": "datasheet",
+      "version": "1.0.0",
+      "subType": "pdf",
+      "icon": "fa-file-pdf-o",
+      "subTypeTitle": "Integration Brief"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "The FortiSOAR platform enables the automation of repetitive tasks. In the scenario of a HIPAA breach, the platform has the capability to automatically trigger workflows that lead incident response team members through a sequence of actions. This video provides a comprehensive overview of the process.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/nhBeDDb9hXQ",
+      "label": "HIPPA Breach Notification Reporting & Investigation using FortiSOAR",
+      "name": "",
+      "publishedDate": 1699259271,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "The FortiSOAR 'Typosquat Alert Investigation' Solution Pack streamlines brand impersonation alerting and investigation of typo squatted domains.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/IXtjdOcqmlI",
+      "label": "Typosquat Alert Investigation",
+      "name": "",
+      "publishedDate": 1699259271,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    },
+    {
+      "buildNumber": 0,
+      "category": [
+        "Authentication"
+      ],
+      "certified": true,
+      "description": "Integration Of NETSCOUT AED v1.0.0 with FortiSOAR.",
+      "iconLarge": null,
+      "infoPath": "https://www.youtube.com/embed/UpQxBqXU-ZY",
+      "label": "Integration Of NETSCOUT AED with FortiSOAR",
+      "name": "",
+      "publishedDate": 1701932890,
+      "publisher": "Fortinet",
+      "type": "demovideos",
+      "version": "1.0.0",
+      "subType": "video"
+    }
+  ]
+}

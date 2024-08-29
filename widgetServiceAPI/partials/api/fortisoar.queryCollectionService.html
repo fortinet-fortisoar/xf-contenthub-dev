@@ -1,0 +1,44 @@
+<h1><code ng:non-bindable="">queryCollectionService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-querycollectionservice-page"><p>The <code>queryCollectionService</code> loads, saves, manipulates, and deletes query collections, etc..</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.settingsService">settingsService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.picklistsService">picklistsService</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_load">load(model, storeTime)</h3>
+<div class="load"><div class="fortisoar-querycollectionservice-load-page"><p>This will load the queries for a given module and store a promise for all
+subsequent requests.</p>
+</div><h5 id="methods_load_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>model</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-querycollectionservice-load-page"><p>The name of the model from which queries are to be loaded.</p>
+</div></td></tr><tr><td>storeTime</td><td><a href="" class="label type-hint type-hint-int">int</a></td><td><div class="fortisoar-querycollectionservice-load-page"><p>The time in milliseconds to store the promise.</p>
+</div></td></tr></tbody></table><h5 id="methods_load_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-querycollectionservice-load-page"><p>A promise that will be resolved with the queries once loaded.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadqueryfiltervalues">loadQueryFilterValues(query)</h3>
+<div class="loadqueryfiltervalues"><div class="fortisoar-querycollectionservice-loadqueryfiltervalues-page"><p>Updates the values of the provided query&#39;s filters with either a picklist
+object, or display value.</p>
+</div><h5 id="methods_loadqueryfiltervalues_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>query</td><td><a href="" class="label type-hint type-hint-query">Query</a></td><td><div class="fortisoar-querycollectionservice-loadqueryfiltervalues-page"><p>The query object to update filter values</p>
+</div></td></tr></tbody></table><h5 id="methods_loadqueryfiltervalues_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-querycollectionservice-loadqueryfiltervalues-page"><p>A promise that will be resolved after updating all
+filter values.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadresource">loadResource(iri)</h3>
+<div class="loadresource"><div class="fortisoar-querycollectionservice-loadresource-page"><p>Uses the given iri and loads the object. Once loaded, applies the display
+value.</p>
+</div><h5 id="methods_loadresource_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>iri</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-querycollectionservice-loadresource-page"><p>The iri of the entity to be loaded.</p>
+</div></td></tr></tbody></table><h5 id="methods_loadresource_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-querycollectionservice-loadresource-page"><p>A promise that is resolved with the object after loading
+and applying the display value.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

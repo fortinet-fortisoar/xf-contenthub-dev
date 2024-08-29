@@ -1,0 +1,54 @@
+<h1><code ng:non-bindable="">appModulesService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-appmodulesservice-page"><p>The <code>appModulesService</code> loads application modules and provides state information from module names.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.PromiseQueue">PromiseQueue</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_checkviolations">checkViolations(rejection, attributes, isConfigurationManager)</h3>
+<div class="checkviolations"><div class="fortisoar-appmodulesservice-checkviolations-page"><p>This function will return the formatted error message based on the given error object.</p>
+</div><h5 id="methods_checkviolations_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>rejection</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-appmodulesservice-checkviolations-page"><p>Object details of the error.</p>
+</div></td></tr><tr><td>attributes <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-appmodulesservice-checkviolations-page"><p>Array of fields.</p>
+</div></td></tr><tr><td>isConfigurationManager <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-appmodulesservice-checkviolations-page"><p>Set the publish error details in the local storage.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_getliststate">getListState(moduleName)</h3>
+<div class="getliststate"><div class="fortisoar-appmodulesservice-getliststate-page"><p>This function will return the list view state based on the given module name.</p>
+</div><h5 id="methods_getliststate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>moduleName</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-appmodulesservice-getliststate-page"><p>The name for a module.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_getmodules">getModules(modules)</h3>
+<div class="getmodules"><div class="fortisoar-appmodulesservice-getmodules-page"><p>Get modules details from the local storage.</p>
+</div><h5 id="methods_getmodules_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>modules</td><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-appmodulesservice-getmodules-page"><p>Array of module name.</p>
+</div></td></tr></tbody></table><h5 id="methods_getmodules_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-array">Array</a></td><td><div class="fortisoar-appmodulesservice-getmodules-page"><p>Array of modules details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getqueuemodules">getQueueModules()</h3>
+<div class="getqueuemodules"><div class="fortisoar-appmodulesservice-getqueuemodules-page"><p>This function will return the queue modules.</p>
+</div><h5 id="methods_getqueuemodules_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-appmodulesservice-getqueuemodules-page"><p>A promise that is resolved with module metadata.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getstate">getState(moduleName)</h3>
+<div class="getstate"><div class="fortisoar-appmodulesservice-getstate-page"><p>This function will return the state based on the given module name.</p>
+</div><h5 id="methods_getstate_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>moduleName</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-appmodulesservice-getstate-page"><p>The name for a module.</p>
+</div></td></tr></tbody></table><h5 id="methods_getstate_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-appmodulesservice-getstate-page"><p>State of the provided module name.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_load">load(excludeSystemModule, forceReload)</h3>
+<div class="load"><div class="fortisoar-appmodulesservice-load-page"><p>This function will load all the modules including system modules</p>
+</div><h5 id="methods_load_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>excludeSystemModule <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-appmodulesservice-load-page"><p>System modules will be excluded if True.</p>
+</div></td></tr><tr><td>forceReload <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-appmodulesservice-load-page"><p>Based on the value modules will be fetched from localStorage or from database.</p>
+</div></td></tr></tbody></table><h5 id="methods_load_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-appmodulesservice-load-page"><p>A promise that is resolved with module metadata.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,66 @@
+<h1><code ng:non-bindable="">connectorService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-connectorservice-page"><p>The purpose of the service is to handle connector-specific operations like creating connectors, getting connector details, etc.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_deleteconnector">deleteConnector(id)</h3>
+<div class="deleteconnector"><div class="fortisoar-connectorservice-deleteconnector-page"><p>This function will delete the connector.</p>
+</div><h5 id="methods_deleteconnector_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>id</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-deleteconnector-page"><p>This is the ID of the connector.</p>
+</div></td></tr></tbody></table><h5 id="methods_deleteconnector_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-deleteconnector-page"><p>A promise that will be resolved with the status of delete operation.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_executeconnectoraction">executeConnectorAction(connectorName, connectorVersion, operation, configuration, params, audit, auditInfo, agent)</h3>
+<div class="executeconnectoraction"><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>This function will execute connector action explicitly.</p>
+</div><h5 id="methods_executeconnectoraction_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>connectorName</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Name of the connector.</p>
+</div></td></tr><tr><td>connectorVersion</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Version of the connector.</p>
+</div></td></tr><tr><td>operation</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Operation name.</p>
+</div></td></tr><tr><td>configuration</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Configuration ID.</p>
+</div></td></tr><tr><td>params</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Parameters for the operation.</p>
+</div></td></tr><tr><td>audit <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>This will check weather this will audited or not.</p>
+</div></td></tr><tr><td>auditInfo <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>Audit information.</p>
+</div></td></tr><tr><td>agent <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>This is the agent ID. Based on this ID the connector details are fetched from the agent machine.</p>
+</div></td></tr></tbody></table><h5 id="methods_executeconnectoraction_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-executeconnectoraction-page"><p>A promise that will be resolved with the executed operation details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getconnector">getConnector(name, version, agent)</h3>
+<div class="getconnector"><div class="fortisoar-connectorservice-getconnector-page"><p>This function returns the connector details.</p>
+</div><h5 id="methods_getconnector_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>name</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getconnector-page"><p>This is the name of the connector. Based on this name the connector
+details are fetched.</p>
+</div></td></tr><tr><td>version</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getconnector-page"><p>This is the version of the connector.</p>
+</div></td></tr><tr><td>agent <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getconnector-page"><p>This is the agent ID. If provided, based on this ID the connector
+details are fetched from the agent machine.</p>
+</div></td></tr></tbody></table><h5 id="methods_getconnector_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-getconnector-page"><p>A promise that will be resolved with the connector details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getconnectorhealth">getConnectorHealth(connector, configUUID, agent)</h3>
+<div class="getconnectorhealth"><div class="fortisoar-connectorservice-getconnectorhealth-page"><p>The purpose of this method is to get the connector&#39;s health details.</p>
+</div><h5 id="methods_getconnectorhealth_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>connector</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-connectorservice-getconnectorhealth-page"><p>This is the connector object.</p>
+</div></td></tr><tr><td>configUUID</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getconnectorhealth-page"><p>Configuration ID of the connector.</p>
+</div></td></tr><tr><td>agent <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getconnectorhealth-page"><p>This is the agent ID. If provided, based on this ID
+the connector&#39;s health details are fetched from the agent machine.</p>
+</div></td></tr></tbody></table><h5 id="methods_getconnectorhealth_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-getconnectorhealth-page"><p>A promise that will be resolved with the connector&#39;s health details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getdevelopedconnector">getDevelopedConnector(id, editRepoConnector)</h3>
+<div class="getdevelopedconnector"><div class="fortisoar-connectorservice-getdevelopedconnector-page"><p>The purpose of this method is to get custom connector details. 
+Connectors that are in draft mode and yet to be published.</p>
+</div><h5 id="methods_getdevelopedconnector_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>id</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-connectorservice-getdevelopedconnector-page"><p>This is the ID of the connector. Based on this ID the connector details are fetched.</p>
+</div></td></tr><tr><td>editRepoConnector <div><em>(optional)</em></div></td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-connectorservice-getdevelopedconnector-page"><p>Flag to mention regarding edit action of connector.</p>
+</div></td></tr></tbody></table><h5 id="methods_getdevelopedconnector_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-getdevelopedconnector-page"><p>A promise that will be resolved with the connector details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_updateconnectorconfig">updateConnectorConfig(connector, newConfig, deleteConfig)</h3>
+<div class="updateconnectorconfig"><div class="fortisoar-connectorservice-updateconnectorconfig-page"><p>This function will create, update or delete the connector configuration.</p>
+</div><h5 id="methods_updateconnectorconfig_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>connector</td><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-connectorservice-updateconnectorconfig-page"><p>This is the connector object.</p>
+</div></td></tr><tr><td>newConfig</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-connectorservice-updateconnectorconfig-page"><p>Indicates whether the configuration is new or already exists.</p>
+</div></td></tr><tr><td>deleteConfig</td><td><a href="" class="label type-hint type-hint-boolean">Boolean</a></td><td><div class="fortisoar-connectorservice-updateconnectorconfig-page"><p>Set true to delete the selected configuration.</p>
+</div></td></tr></tbody></table><h5 id="methods_updateconnectorconfig_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-connectorservice-updateconnectorconfig-page"><p>A promise that will be resolved on the connector update success, else reject.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

@@ -1,0 +1,58 @@
+<h1><code ng:non-bindable="">usersService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-usersservice-page"><p>The <code>usersService</code> is an auxiliary service that performs actions regarding
+users. It includes methods for interacting with the current user and updating
+DAS users.</p>
+</div></div>
+<h2 id="dependencies">Dependencies</h2>
+<ul class="dependencies"><li><code ng:non-bindable=""><a href="#/api/fortisoar.Modules">Modules</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.entityFieldsService">entityFieldsService</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.Field">Field</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.PromiseQueue">PromiseQueue</a></code>
+</li>
+<li><code ng:non-bindable=""><a href="#/api/fortisoar.localStorageService">localStorageService</a></code>
+</li>
+</ul>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_getavatar">getAvatar(avatarIri)</h3>
+<div class="getavatar"><div class="fortisoar-usersservice-getavatar-page"><p>Gets the avatar img src with base64 encoded image data for the given IRI.
+If the avatar IRI is empty, it will return the default avatar URI.</p>
+</div><h5 id="methods_getavatar_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>avatarIri</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-usersservice-getavatar-page"><p>The CH IRI that it will retrieve the image from</p>
+</div></td></tr></tbody></table><h5 id="methods_getavatar_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-usersservice-getavatar-page"><p>Promise that resolves with the image src, which is
+either the default image or base 64 encoded image</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getcurrentavatar">getCurrentAvatar()</h3>
+<div class="getcurrentavatar"><div class="fortisoar-usersservice-getcurrentavatar-page"><p>Gets the current user avatar from local storage if it exists, otherwise
+loads it using getAvatar and saves it in local storage.</p>
+</div><h5 id="methods_getcurrentavatar_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-usersservice-getcurrentavatar-page"><p>Promise that resolves with the image src, which is
+either the default image or base 64 encoded image</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getcurrentuser">getCurrentUser()</h3>
+<div class="getcurrentuser"><div class="fortisoar-usersservice-getcurrentuser-page"><p>Gets the current user that was loaded with loadCurrentUser.</p>
+</div><h5 id="methods_getcurrentuser_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-object">Object</a></td><td><div class="fortisoar-usersservice-getcurrentuser-page"><p>The current user object from CH.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getuserbyiri">getUserByIri(userIri)</h3>
+<div class="getuserbyiri"><div class="fortisoar-usersservice-getuserbyiri-page"><p>Gets the user details based on the IRI.</p>
+</div><h5 id="methods_getuserbyiri_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>userIri</td><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-usersservice-getuserbyiri-page"><p>The CH IRI that it will retrieve the user details from.</p>
+</div></td></tr></tbody></table><h5 id="methods_getuserbyiri_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-usersservice-getuserbyiri-page"><p>Promise that resolves with the user details.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_loadcurrentuser">loadCurrentUser()</h3>
+<div class="loadcurrentuser"><div class="fortisoar-usersservice-loadcurrentuser-page"><p>Loads the current user object from CH and store it in local storage. If it
+already has been loaded, it retrieves it from local storage cache.</p>
+</div><h5 id="methods_loadcurrentuser_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-usersservice-loadcurrentuser-page"><p>The promise that will resolve with the current user object.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>

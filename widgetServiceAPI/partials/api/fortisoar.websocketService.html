@@ -1,0 +1,54 @@
+<h1><code ng:non-bindable="">websocketService</code>
+<div><span class="hint">service in module <code ng:non-bindable="">fortisoar</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="fortisoar-websocketservice-page"><p>The <code>websocketService</code> handles the websocket functionality to update the UI and backend with 
+live data</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><h3 id="methods_disconnect">disconnect(logout)</h3>
+<div class="disconnect"><div class="fortisoar-websocketservice-disconnect-page"><p>This method is used to disconnect the web socket.</p>
+</div><h5 id="methods_disconnect_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>logout</td><td><a href="" class="label type-hint type-hint-boolean">boolean</a></td><td><div class="fortisoar-websocketservice-disconnect-page"><p>boolean true passed to disconnect the web socket.</p>
+</div></td></tr></tbody></table></div>
+</li>
+<li><h3 id="methods_generatewebsocketsessionid">generateWebsocketSessionId()</h3>
+<div class="generatewebsocketsessionid"><div class="fortisoar-websocketservice-generatewebsocketsessionid-page"><p>The method generates a fresh web socket session id.</p>
+</div><h5 id="methods_generatewebsocketsessionid_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-websocketservice-generatewebsocketsessionid-page"><p>Web socket session id.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getheader">getHeader()</h3>
+<div class="getheader"><div class="fortisoar-websocketservice-getheader-page"><p>This method is used to get the header token</p>
+</div><h5 id="methods_getheader_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-websocketservice-getheader-page"><p>Authorization token.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_getwebsocketsessionid">getWebsocketSessionId()</h3>
+<div class="getwebsocketsessionid"><div class="fortisoar-websocketservice-getwebsocketsessionid-page"><p>The method gets the web socket session id.</p>
+</div><h5 id="methods_getwebsocketsessionid_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-string">String</a></td><td><div class="fortisoar-websocketservice-getwebsocketsessionid-page"><p>Web socket session id.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_opensocket">openSocket()</h3>
+<div class="opensocket"><div class="fortisoar-websocketservice-opensocket-page"><p>This method opens the connection through the socket URL</p>
+</div><h5 id="methods_opensocket_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-websocketservice-opensocket-page"><p>Promise object that on success returns the websocket connection.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_reconnect">reconnect()</h3>
+<div class="reconnect"><div class="fortisoar-websocketservice-reconnect-page"><p>This method gives a warning to manually refresh and reconnect the web socket due to inactivity.</p>
+</div></div>
+</li>
+<li><h3 id="methods_subscribe">subscribe(topic, callback)</h3>
+<div class="subscribe"><div class="fortisoar-websocketservice-subscribe-page"><p>This method helps to receive data on a successful subscription.</p>
+</div><h5 id="methods_subscribe_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>topic</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="fortisoar-websocketservice-subscribe-page"><p>title name given to subscribe the web socket.</p>
+</div></td></tr><tr><td>callback</td><td><a href="" class="label type-hint type-hint-method">method</a></td><td><div class="fortisoar-websocketservice-subscribe-page"><p>function to be called when web socket is subscribed.</p>
+</div></td></tr></tbody></table><h5 id="methods_subscribe_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="fortisoar-websocketservice-subscribe-page"><p>Promise object that on success will return the subscription.</p>
+</div></td></tr></table></div>
+</li>
+<li><h3 id="methods_unsubscribe">unsubscribe(subscription)</h3>
+<div class="unsubscribe"><div class="fortisoar-websocketservice-unsubscribe-page"><p>This method is used to unsubscribe the web socket for the provided subscription.</p>
+</div><h5 id="methods_unsubscribe_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>subscription</td><td><a href="" class="label type-hint type-hint-any">any</a></td><td><div class="fortisoar-websocketservice-unsubscribe-page"><p>data passed to indicate the web socket was subscribed</p>
+</div></td></tr></tbody></table></div>
+</li>
+</ul>
+</div>
+</div>
