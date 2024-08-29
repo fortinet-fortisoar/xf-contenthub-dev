@@ -1344,6 +1344,10 @@
   box-shadow: none;
 }
 
+.light-theme-applied .detail-container .markdown-body pre {
+  background-color: #00a3ff;
+}
+
 .light-theme-applied .detail-container .content-box-styling {
   background-color: #ffffff;
   border-color: #d7d8df;
