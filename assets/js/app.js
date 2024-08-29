@@ -29,24 +29,22 @@ $(document).ready(function () {
   //Top nav bar
   var topbar = $('#topbar-container');
   if (topbar) {
-    topbar.load('xf-contenthub-dev/assets/html/topbar.html', function() {
-      var themeApplied = localStorageGetSetItem('get', 'themeApplied');
-      themeApplied = themeApplied ? themeApplied : 'Dark Theme';
-      setTimeout(function () {
-        toggleTheme(themeApplied);
-      }, 10);
-      if(window.location.href.indexOf('list.html') > -1 && !paramCategory && !paramPublisher && paramContentType !== 'all'){
-        var paramContentTypeArray = paramContentType ? paramContentType.split(',') : [];
-        if(paramContentTypeArray.length === 1){
-          updateHeaderContentTypeLinks(paramContentTypeArray[0], 'header');
-        }
+    topbar.load('xf-contenthub-dev/assets/html/topbar.html', function(response, status) {
+      if (status == 'error') {
+        topbar.load('assets/html/topbar.html', postTopbarLoad);
+      } else {
+        postTopbarLoad();
       }
     });
   }
   //Footer
   var footer = $('#footer-container');
   if (footer) {
-    footer.load('xf-contenthub-dev/assets/html/footer.html');
+    footer.load('xf-contenthub-dev/assets/html/footer.html', function(response, status, xhr) {
+      if (status == 'error') {
+        footer.load('xf-contenthub-dev/assets/html/footer.html');
+      }
+    });
   }
   $('.dropdown-toggle').dropdown();
   $('.nav-tabs').tab();
@@ -56,6 +54,20 @@ $(document).ready(function () {
     $('.content-count-sort-container .global-search-input-sm').removeClass('w-25');
   }
 });
+
+function postTopbarLoad() {
+  var themeApplied = localStorageGetSetItem('get', 'themeApplied');
+  themeApplied = themeApplied ? themeApplied : 'Dark Theme';
+  setTimeout(function () {
+    toggleTheme(themeApplied);
+  }, 10);
+  if(window.location.href.indexOf('list.html') > -1 && !paramCategory && !paramPublisher && paramContentType !== 'all'){
+    var paramContentTypeArray = paramContentType ? paramContentType.split(',') : [];
+    if(paramContentTypeArray.length === 1){
+      updateHeaderContentTypeLinks(paramContentTypeArray[0], 'header');
+    }
+  }
+}
 
 function reloadURLParams(){
   paramContentType = getUrlParameter('contentType');
